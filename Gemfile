@@ -49,6 +49,18 @@ group :development do
   gem 'rspec-rails'
 end
 
+group :test do
+  gem 'bullet'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-faker'
+  gem 'rubocop-rails'
+  gem 'simplecov'
+  gem 'vcr'
+  gem 'webmock'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
