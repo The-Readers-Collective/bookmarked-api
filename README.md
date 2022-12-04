@@ -138,6 +138,29 @@ query{
   }
 }
 ```
+### Delete a User
+Deletes a single user
+
+<b>Example Query:</b>
+```json
+mutation{
+  destroyUser(input:{id: "4"}){
+    id
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "destroyUser": {
+      "id": "4"
+    }
+  }
+}
+```
 
 ## Local Setup
 
