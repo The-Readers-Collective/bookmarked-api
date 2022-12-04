@@ -19,3 +19,4 @@ user_2.books.create!(google_book_id: "555888", book_title: "Game of Thrones", au
 
 user_1.followings.create!(user_id: user_1.id, followed_id: user_2.id)
 ##need follower relations
+# user_1.books.create!(google_book_id: "555888", book_title: "Game of Thrones", author: "GRRM", isbn_13: "8888", condition: "new", genre: "fantasy", book_cover:"book_image5.jpeg", status: 1)
