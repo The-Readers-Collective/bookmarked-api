@@ -10,9 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2022_12_04_003344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "books", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "google_book_id"
+    t.string "book_title"
+    t.string "author"
+    t.string "isbn_13"
+    t.string "condition"
+    t.string "genre"
+    t.string "book_cover"
+    t.integer "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_books_on_user_id"
+  end
+
+  create_table "followings", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "followed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_followings_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "email"
+    t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "books", "users"
+  add_foreign_key "followings", "users"
 end
