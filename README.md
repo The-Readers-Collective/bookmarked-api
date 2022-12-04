@@ -9,6 +9,8 @@
   - [Create User](#create-user)
   - [All Users](#all-users)
   - [One User](#one-user)
+  - [Delete User](#delete-user)
+  - [Update User](#update-user)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -138,7 +140,8 @@ query{
   }
 }
 ```
-### Delete a User
+
+### Delete User
 Deletes a single user
 
 <b>Example Query:</b>
@@ -162,6 +165,37 @@ mutation{
 }
 ```
 
+### Update User
+Lets you update attributes of a User
+
+<b>Example Query:</b>
+```json
+mutation{
+  updateUser(input:{id: "2", attributes:{
+    name: "Bob Joe", address: "578 Elms St", email: "Bob@gmail.com", password: "abc123"
+  }}) {
+    user {
+      id
+      name
+    }
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "updateUser": {
+      "user": {
+        "id": "2",
+        "name": "Bob Joe"
+      }
+    }
+  }
+}
+```
 ## Local Setup
 
 * Fork this repository
