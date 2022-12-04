@@ -27,7 +27,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
 gem 'jsonapi-serializer'
-
+gem 'graphql'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
@@ -47,6 +47,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails'
+  gem 'graphiql-rails'
+
 end
 
 group :test do
