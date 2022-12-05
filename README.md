@@ -210,6 +210,8 @@ query {
     email
     address
     books {
+      id
+      userId
       googleBookId
       bookTitle
       author
@@ -236,6 +238,8 @@ query {
         "address": "123 abc st",
         "books": [
           {
+            "id": "1",
+            "userId": 1,
             "googleBookId": "123456",
             "bookTitle": "Sandys Book 1",
             "author": "Sandy L",
@@ -246,6 +250,8 @@ query {
             "status": 0
           },
           {
+            "id": "2",
+            "userId": 1,
             "googleBookId": "654321",
             "bookTitle": "Sandys Book 2",
             "author": "Sandy L",
@@ -256,6 +262,8 @@ query {
             "status": 0
           },
           {
+            "id": "3",
+            "userId": 1,
             "googleBookId": "2341661",
             "bookTitle": "Sandys Book 3",
             "author": "Christine J",
@@ -274,6 +282,8 @@ query {
         "address": "578 Elms St",
         "books": [
           {
+            "id": "4",
+            "userId": 2,
             "googleBookId": "555888",
             "bookTitle": "Game of Thrones",
             "author": "GRRM",
