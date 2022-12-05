@@ -11,6 +11,7 @@
   - [One User](#one-user)
   - [Delete User](#delete-user)
   - [Update User](#update-user)
+  - [View Users Books](#view-users-books)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -196,6 +197,99 @@ mutation{
   }
 }
 ```
+
+### View Users Books
+Lets you update attributes of a User
+
+<b>Example Query:</b>
+```json
+query {
+  users {
+    id
+    name
+    email
+    address
+    books {
+      googleBookId
+      bookTitle
+      author
+      isbn13
+      genre
+      condition
+      bookCover
+      status
+    }
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "users": [
+      {
+        "id": "1",
+        "name": "Sandy M",
+        "email": "sandy@gmail.com",
+        "address": "123 abc st",
+        "books": [
+          {
+            "googleBookId": "123456",
+            "bookTitle": "Sandys Book 1",
+            "author": "Sandy L",
+            "isbn13": "1234",
+            "genre": "adventure",
+            "condition": "new",
+            "bookCover": "book_image.jpeg",
+            "status": 0
+          },
+          {
+            "googleBookId": "654321",
+            "bookTitle": "Sandys Book 2",
+            "author": "Sandy L",
+            "isbn13": "5678",
+            "genre": "romance",
+            "condition": "used",
+            "bookCover": "book_image1.jpeg",
+            "status": 0
+          },
+          {
+            "googleBookId": "2341661",
+            "bookTitle": "Sandys Book 3",
+            "author": "Christine J",
+            "isbn13": "9868",
+            "genre": "comedy",
+            "condition": "new",
+            "bookCover": "book_image2.jpeg",
+            "status": 1
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Bob Joe",
+        "email": "Bob@gmail.com",
+        "address": "578 Elms St",
+        "books": [
+          {
+            "googleBookId": "555888",
+            "bookTitle": "Game of Thrones",
+            "author": "GRRM",
+            "isbn13": "8888",
+            "genre": "fantasy",
+            "condition": "new",
+            "bookCover": "book_image5.jpeg",
+            "status": 0
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ## Local Setup
 
 * Fork this repository
