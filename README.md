@@ -20,7 +20,9 @@
 
 ## Architecture and Design
 
-TBD
+<p align="center">
+  <img src="https://github.com/The-Readers-Collective/.github/blob/main/profile/assets/BE_DB_Schema.png?raw=true" />
+</p>
 
 ## All Available API End Points:
 
