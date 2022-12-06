@@ -8,7 +8,7 @@ module Types
     field :author, String
     field :isbn_13, String
     field :condition, String
-    field :genre, String
+    field :category, String
     field :book_cover, String
     field :available, Boolean
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
