@@ -7,11 +7,12 @@
 1. [Architecture and Design](#architecture-and-design)
 2. [Available API End Points](#all-available-api-end-points)
   - [Create User](#create-user)
-  - [All Users](#all-users)
-  - [One User](#one-user)
+  - [View All Users](#view-all-users)
+  - [View One User](#view-one-user)
   - [Delete User](#delete-user)
   - [Update User](#update-user)
-  - [View Users Books](#view-users-books)
+  - [View All Users and All Books](#view-all-users-and-all-books)
+  - [View A Single User and their Books](#view-a-single-user-and-their-books)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -34,17 +35,15 @@ Creates a single user
 ```json
 mutation{
   createUser(input:{
-   	name: "Sandy M",
-    address: "123 abc st",
-    email: "sandy@gmail.com",
-    password: "abc123"
+   	name: "Florida M.",
+    zipcode: "32811",
+    email: "florida@man.com"
   }){
     user {
       id,
       name,
-      address,
-      email,
-      password
+      zipcode,
+      email
     }
     errors
   }
@@ -58,11 +57,10 @@ mutation{
   "data": {
     "createUser": {
       "user": {
-        "id": "1",
-        "name": "Sandy M",
-        "address": "123 abc st",
-        "email": "sandy@gmail.com",
-        "password": "abc123"
+        "id": "3",
+        "name": "Florida M.",
+        "zipcode": "32811",
+        "email": "florida@man.com"
       },
       "errors": []
     }
@@ -70,7 +68,7 @@ mutation{
 }
 ```
 
-### All Users
+### View All Users
 Returns all Users
 
 <b>Example Query:</b>
@@ -78,9 +76,10 @@ Returns all Users
 query {
   users {
     id
-    name
-    address
     email
+    name
+    zipcode
+    updatedAt
   }
 }
 ```
@@ -93,37 +92,42 @@ query {
     "users": [
       {
         "id": "1",
+        "email": "sandy@gmail.com",
         "name": "Sandy M",
-        "address": "123 abc st",
-        "email": "sandy@gmail.com"
+        "zipcode": "80241",
+        "updatedAt": "2022-12-06T06:39:38Z"
       },
       {
         "id": "2",
-        "name": "Joe B",
-        "address": "578 Elms St",
-        "email": "Bob@gmail.com"
+        "email": "Bob@gmail.com",
+        "name": "Bob Joe",
+        "zipcode": "80020",
+        "updatedAt": "2022-12-06T07:23:54Z"
       },
       {
         "id": "3",
-        "name": "Practice_user",
-        "address": "543 Fillet St",
-        "email": "Practice@gmail.com"
+        "email": "florida@man.com",
+        "name": "Florida M.",
+        "zipcode": "32811",
+        "updatedAt": "2022-12-06T07:08:36Z"
       }
     ]
   }
 }
 ```
 
-### One User
+### View One User
 Returns a single user
 
 <b>Example Query:</b>
 ```json
-query{
-  user(id: 1){
-    name
-    address
+query {
+  user(id: 1) {
+    id
     email
+    name
+    zipcode
+    updatedAt
   }
 }
 ```
@@ -134,9 +138,11 @@ query{
 {
   "data": {
     "user": {
+      "id": "1",
+      "email": "sandy@gmail.com",
       "name": "Sandy M",
-      "address": "123 abc st",
-      "email": "sandy@gmail.com"
+      "zipcode": "80241",
+      "updatedAt": "2022-12-06T06:39:38Z"
     }
   }
 }
@@ -167,17 +173,19 @@ mutation{
 ```
 
 ### Update User
-Lets you update attributes of a User
+Lets you update attributes of a single User
 
 <b>Example Query:</b>
 ```json
 mutation{
   updateUser(input:{id: "2", attributes:{
-    name: "Bob Joe", address: "578 Elms St", email: "Bob@gmail.com", password: "abc123"
+    name: "Bob Joe", zipcode: "80020", email: "Bob@gmail.com"
   }}) {
     user {
       id
+      email
       name
+      zipcode
     }
   }
 }
@@ -191,35 +199,44 @@ mutation{
     "updateUser": {
       "user": {
         "id": "2",
-        "name": "Bob Joe"
+        "email": "Bob@gmail.com",
+        "name": "Bob Joe",
+        "zipcode": "80020"
       }
     }
   }
 }
 ```
 
-### View Users Books
-Lets you update attributes of a User
+### View All Users and All Books
+Lets you view all users and all their books
 
 <b>Example Query:</b>
 ```json
 query {
   users {
     id
-    name
     email
-    address
-    books {
+    name
+    zipcode
+    updatedAt
+    userBooks{
       id
       userId
-      googleBookId
-      bookTitle
-      author
-      isbn13
-      genre
-      condition
-      bookCover
+      bookId
       status
+      book {
+        id
+        googleBookId
+        isbn13
+        author
+        bookTitle
+        bookCover
+        category
+        condition
+        available
+        updatedAt
+      }
     }
   }
 }
@@ -233,69 +250,165 @@ query {
     "users": [
       {
         "id": "1",
-        "name": "Sandy M",
         "email": "sandy@gmail.com",
-        "address": "123 abc st",
-        "books": [
+        "name": "Sandy M",
+        "zipcode": "80241",
+        "updatedAt": "2022-12-06T06:39:38Z",
+        "userBooks": [
           {
             "id": "1",
-            "userId": 1,
-            "googleBookId": "123456",
-            "bookTitle": "Sandys Book 1",
-            "author": "Sandy L",
-            "isbn13": "1234",
-            "genre": "adventure",
-            "condition": "new",
-            "bookCover": "book_image.jpeg",
-            "status": 0
+            "userId": "1",
+            "bookId": "1",
+            "status": 0,
+            "book": {
+              "id": "1",
+              "googleBookId": "tXGRBgwxAHIC",
+              "isbn13": "9780316202275",
+              "author": "James S. A. Corey",
+              "bookTitle": "Caliban's War",
+              "bookCover": "http://books.google.com/books/content?id=tXGRBgwxAHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "category": "Sci-Fi",
+              "condition": "Excellent",
+              "available": true,
+              "updatedAt": "2022-12-06T06:39:38Z"
+            }
           },
           {
             "id": "2",
-            "userId": 1,
-            "googleBookId": "654321",
-            "bookTitle": "Sandys Book 2",
-            "author": "Sandy L",
-            "isbn13": "5678",
-            "genre": "romance",
-            "condition": "used",
-            "bookCover": "book_image1.jpeg",
-            "status": 0
+            "userId": "1",
+            "bookId": "2",
+            "status": 0,
+            "book": {
+              "id": "2",
+              "googleBookId": "aWZzLPhY4o0C",
+              "isbn13": "9780547952017",
+              "author": "J.R.R. Tolkien",
+              "bookTitle": "The Fellowship Of The Ring",
+              "bookCover": "http://books.google.com/books/content?id=aWZzLPhY4o0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "category": "Adventure",
+              "condition": "Good",
+              "available": true,
+              "updatedAt": "2022-12-06T06:39:38Z"
+            }
           },
           {
             "id": "3",
-            "userId": 1,
-            "googleBookId": "2341661",
-            "bookTitle": "Sandys Book 3",
-            "author": "Christine J",
-            "isbn13": "9868",
-            "genre": "comedy",
-            "condition": "new",
-            "bookCover": "book_image2.jpeg",
-            "status": 1
+            "userId": "1",
+            "bookId": "4",
+            "status": 1,
+            "book": {
+              "id": "4",
+              "googleBookId": "1q_xAwAAQBAJ",
+              "isbn13": "9780385371988",
+              "author": "Dr. Seuss",
+              "bookTitle": "Oh, the Places You'll Go!",
+              "bookCover": "http://books.google.com/books/content?id=1q_xAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "category": "Childrens Book",
+              "condition": "Poor",
+              "available": true,
+              "updatedAt": "2022-12-06T06:39:38Z"
+            }
           }
         ]
       },
       {
         "id": "2",
-        "name": "Bob Joe",
         "email": "Bob@gmail.com",
-        "address": "578 Elms St",
-        "books": [
+        "name": "Joe B",
+        "zipcode": "80020",
+        "updatedAt": "2022-12-06T06:39:38Z",
+        "userBooks": [
           {
             "id": "4",
-            "userId": 2,
-            "googleBookId": "555888",
-            "bookTitle": "Game of Thrones",
-            "author": "GRRM",
-            "isbn13": "8888",
-            "genre": "fantasy",
-            "condition": "new",
-            "bookCover": "book_image5.jpeg",
-            "status": 0
+            "userId": "2",
+            "bookId": "3",
+            "status": 0,
+            "book": {
+              "id": "3",
+              "googleBookId": "hffZtgAACAAJ",
+              "isbn13": "9780007428540",
+              "author": "George R. R. Martin",
+              "bookTitle": "A Game of Thrones",
+              "bookCover": "http://books.google.com/books/content?id=hffZtgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+              "category": "Fantasy",
+              "condition": "Good",
+              "available": true,
+              "updatedAt": "2022-12-06T06:39:38Z"
+            }
           }
         ]
       }
     ]
+  }
+}
+```
+
+### View A Single User and their Books
+Lets you view a single user and all their books
+
+<b>Example Query:</b>
+```json
+query {
+  user(id: 2) {
+    id
+    email
+    name
+    zipcode
+    updatedAt
+    userBooks {
+      id
+      userId
+      bookId
+      status
+      book {
+        id
+        isbn13
+        bookCover
+        bookTitle
+        author
+        googleBookId
+        category
+        condition
+        available
+        updatedAt
+      }
+    }
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "user": {
+      "id": "2",
+      "email": "Bob@gmail.com",
+      "name": "Bob Joe",
+      "zipcode": "80020",
+      "updatedAt": "2022-12-06T07:23:54Z",
+      "userBooks": [
+        {
+          "id": "4",
+          "userId": "2",
+          "bookId": "3",
+          "status": 0,
+          "book": {
+            "id": "3",
+            "isbn13": "9780007428540",
+            "bookCover": "http://books.google.com/books/content?id=hffZtgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "bookTitle": "A Game of Thrones",
+            "author": "George R. R. Martin",
+            "googleBookId": "hffZtgAACAAJ",
+            "category": "Fantasy",
+            "condition": "Good",
+            "available": true,
+            "updatedAt": "2022-12-06T06:39:38Z"
+          }
+        }
+      ]
+    }
   }
 }
 ```
