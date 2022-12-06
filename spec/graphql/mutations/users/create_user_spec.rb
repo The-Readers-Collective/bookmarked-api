@@ -23,21 +23,21 @@ module Mutations
 
       def query
         <<~GQL
-        mutation{
-          createUser(input:{
-            name: "Florida M.",
-            zipcode: "32811",
-            email: "florida@man.com"
-          }){
-            user {
-              id,
-              name,
-              zipcode,
-              email
+          mutation{
+            createUser(input:{
+              name: "Florida M.",
+              zipcode: "32811",
+              email: "florida@man.com"
+            }){
+              user {
+                id,
+                name,
+                zipcode,
+                email
+              }
+              errors
             }
-            errors
           }
-        }
         GQL
       end
     end
