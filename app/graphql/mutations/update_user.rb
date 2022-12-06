@@ -1,9 +1,6 @@
 module Mutations
   class UpdateUser < BaseMutation
-    # argument :name, String
-    # argument :address, String
-    # argument :email, String
-    # argument :password, String
+
     argument :attributes, Types::UserAttributes
     argument :id, ID, required: true
 

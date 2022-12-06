@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_12_05_230747) do
     t.string "author"
     t.string "isbn_13"
     t.string "condition"
-    t.string "genre"
+    t.string "category"
     t.string "book_cover"
     t.boolean "available"
     t.datetime "created_at", null: false

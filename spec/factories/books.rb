@@ -7,7 +7,7 @@ FactoryBot.define do
     isbn_13 { "MyString" }
     status { 1 }
     condition { "MyString" }
-    genre { "MyString" }
+    category { "MyString" }
     book_cover { "MyString" }
   end
 end

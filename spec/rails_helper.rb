@@ -1,10 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'simplecov'
 require 'webmock/rspec'
 require 'spec_helper'
-SimpleCov.start do
-  add_filter '/factories/'
-end
+
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
