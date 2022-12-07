@@ -25,13 +25,20 @@ module Types
       Book.all
     end
 
-    field :book, Types::BookType,  null: false do
+    field :book, Types::BookType, null: false do
       argument :id, ID, required: true
     end
 
     def book(id:)
       Book.find(id)
     end
-    
+
+    field :google_books, [Types::GoogleBookType], null: false do
+      argument :title, String, required: true
+    end
+
+    def google_books(title:)
+      GoogleBooksFacade.books_by_name(title)
+    end
   end
 end
