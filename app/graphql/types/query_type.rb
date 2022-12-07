@@ -32,5 +32,6 @@ module Types
     def book(id:)
       Book.find(id)
     end
+    
   end
 end

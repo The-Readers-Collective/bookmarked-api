@@ -1,4 +1,4 @@
-class Mutations::CreateUser < Mutations::BaseMutation
+class Mutations::Users::CreateUser < Mutations::BaseMutation
   argument :name, String, required: true
   argument :zipcode, String, required: true
   argument :email, String, required: true

@@ -1,5 +1,5 @@
 module Mutations
-  class UpdateUser < BaseMutation
+  class Users::UpdateUser < BaseMutation
 
     argument :attributes, Types::UserAttributes
     argument :id, ID, required: true
