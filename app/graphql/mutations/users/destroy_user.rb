@@ -1,4 +1,4 @@
-class  Mutations::DestroyUser <  Mutations::BaseMutation
+class  Mutations::Users::DestroyUser <  Mutations::BaseMutation
   argument :id, ID, required: true
 
   field :id, ID, null: true

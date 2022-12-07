@@ -1,13 +1,12 @@
 FactoryBot.define do
   factory :book do
-    user { nil }
-    google_book_id { "MyString" }
-    book_title { "MyString" }
-    author { "MyString" }
-    isbn_13 { "MyString" }
-    status { 1 }
-    condition { "MyString" }
-    category { "MyString" }
-    book_cover { "MyString" }
+    google_book_id { Faker::Number.number(digits: 10) }
+    book_title { Faker::Book.title }
+    author { Faker::Book.author }
+    isbn_13 { Faker::Number.number(digits: 10) }
+    condition { "Good" }
+    category { "Adventure" }
+    book_cover { Faker::Internet.domain_name }
+    available { true }
   end
 end
