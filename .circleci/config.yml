@@ -17,6 +17,7 @@ jobs: # a collection of steps
         environment: # environment variables for database, it is kind of obvious but it is important that they match with your test config in database.yml
           POSTGRES_USER: postgres
           POSTGRES_DB: bookmarked-api_test
+          POSTGRES_PASSWORD: password
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       # Which version of bundler?
