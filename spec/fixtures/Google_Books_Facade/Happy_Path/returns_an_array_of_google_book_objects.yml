@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 07 Dec 2022 18:49:39 GMT
+      - Wed, 07 Dec 2022 19:30:17 GMT
       Server:
       - ESF
       Cache-Control:
@@ -51,7 +51,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "vdA4W6Zwcpk",
+              "etag": "Jq9+VAWY9w0",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -150,7 +150,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "NNt9zgEACAAJ",
-              "etag": "YLxlWq0d/ZY",
+              "etag": "4yV6a81TK8E",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/NNt9zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part One",
@@ -220,7 +220,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "N093zgEACAAJ",
-              "etag": "IgkgJSzx3Xc",
+              "etag": "G7dlZjsh9jE",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/N093zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part Two",
@@ -289,72 +289,8 @@ http_interactions:
             },
             {
               "kind": "books#volume",
-              "id": "q-przQEACAAJ",
-              "etag": "x2ylhRtJ+F8",
-              "selfLink": "https://www.googleapis.com/books/v1/volumes/q-przQEACAAJ",
-              "volumeInfo": {
-                "title": "Rhythm of War",
-                "authors": [
-                  "Brandon Sanderson"
-                ],
-                "publisher": "Tor Books",
-                "publishedDate": "2020-11-04",
-                "industryIdentifiers": [
-                  {
-                    "type": "ISBN_10",
-                    "identifier": "1250784263"
-                  },
-                  {
-                    "type": "ISBN_13",
-                    "identifier": "9781250784261"
-                  }
-                ],
-                "readingModes": {
-                  "text": false,
-                  "image": false
-                },
-                "printType": "BOOK",
-                "maturityRating": "NOT_MATURE",
-                "allowAnonLogging": false,
-                "contentVersion": "preview-1.0.0",
-                "panelizationSummary": {
-                  "containsEpubBubbles": false,
-                  "containsImageBubbles": false
-                },
-                "language": "en",
-                "previewLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&cd=4&source=gbs_api",
-                "infoLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&source=gbs_api",
-                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War.html?hl=&id=q-przQEACAAJ"
-              },
-              "saleInfo": {
-                "country": "US",
-                "saleability": "NOT_FOR_SALE",
-                "isEbook": false
-              },
-              "accessInfo": {
-                "country": "US",
-                "viewability": "NO_PAGES",
-                "embeddable": false,
-                "publicDomain": false,
-                "textToSpeechPermission": "ALLOWED",
-                "epub": {
-                  "isAvailable": false
-                },
-                "pdf": {
-                  "isAvailable": false
-                },
-                "webReaderLink": "http://play.google.com/books/reader?id=q-przQEACAAJ&hl=&source=gbs_api",
-                "accessViewStatus": "NONE",
-                "quoteSharingAllowed": false
-              },
-              "searchInfo": {
-                "textSnippet": "&quot;After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war."
-              }
-            },
-            {
-              "kind": "books#volume",
               "id": "90nDzQEACAAJ",
-              "etag": "5hV1wMfj3UY",
+              "etag": "kImkdbZpL9s",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/90nDzQEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War SIGNED EDITION",
@@ -386,7 +322,7 @@ http_interactions:
                   "containsImageBubbles": false
                 },
                 "language": "en",
-                "previewLink": "http://books.google.com/books?id=90nDzQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&cd=5&source=gbs_api",
+                "previewLink": "http://books.google.com/books?id=90nDzQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&cd=4&source=gbs_api",
                 "infoLink": "http://books.google.com/books?id=90nDzQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&source=gbs_api",
                 "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War_SIGNED_EDITION.html?hl=&id=90nDzQEACAAJ"
               },
@@ -417,8 +353,72 @@ http_interactions:
             },
             {
               "kind": "books#volume",
+              "id": "q-przQEACAAJ",
+              "etag": "e/FnB0r7esY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/q-przQEACAAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2020-11-04",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1250784263"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250784261"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War%2Bintitle:Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War.html?hl=&id=q-przQEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=q-przQEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war."
+              }
+            },
+            {
+              "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "K9QtDTr11Bs",
+              "etag": "KXPNeCkIHaI",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -517,7 +517,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wrtRAwAACAAJ",
-              "etag": "rHsg98WKmog",
+              "etag": "r7X1aMoW7UY",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wrtRAwAACAAJ",
               "volumeInfo": {
                 "title": "The Rhythm of War in a Civilised World",
@@ -585,7 +585,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "LF-REAAAQBAJ",
-              "etag": "j0jFBVK+Gqo",
+              "etag": "5EKoZ+POX88",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/LF-REAAAQBAJ",
               "volumeInfo": {
                 "title": "El ritmo de la guerra / Rhythm of War",
@@ -658,7 +658,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "a_EPZSGORPgC",
-              "etag": "IaSzi7kePHk",
+              "etag": "60z3x9GR9kA",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/a_EPZSGORPgC",
               "volumeInfo": {
                 "title": "Blue Rhythms",
@@ -733,7 +733,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wNfx07-AJwcC",
-              "etag": "ixLu1Te9OYQ",
+              "etag": "bF/qH5PoJgw",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wNfx07-AJwcC",
               "volumeInfo": {
                 "title": "Rhythm and Blues, Rap, and Hip-hop",
@@ -806,5 +806,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Wed, 07 Dec 2022 18:49:39 GMT
+  recorded_at: Wed, 07 Dec 2022 19:30:16 GMT
 recorded_with: VCR 6.1.0

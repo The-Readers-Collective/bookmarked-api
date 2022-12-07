@@ -85,7 +85,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.ignore_request { ENV['DISABLE_VCR'] }
   config.ignore_localhost = true
-  config.default_cassette_options = { re_record_interval: 365.days }
+  config.default_cassette_options = { :record => :new_episodes }
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<key>') { ENV['google_api_key'] }
 end
