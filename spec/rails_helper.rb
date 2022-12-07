@@ -77,12 +77,15 @@ Shoulda::Matchers.configure do |config|
 end
 
 VCR.configure do |config|
+  config.before_record do |i|
+    i.response.body.force_encoding('UTF-8')
+  end
   config.allow_http_connections_when_no_cassette = false
   config.cassette_library_dir = 'spec/fixtures'
   config.hook_into :webmock
   config.ignore_request { ENV['DISABLE_VCR'] }
   config.ignore_localhost = true
-  config.default_cassette_options = { re_record_interval: 365.days }
+  config.default_cassette_options = { :record => :new_episodes }
   config.configure_rspec_metadata!
-  # config.filter_sensitive_data('<API_KEY>', { ENV['API_KEY'] })
+  config.filter_sensitive_data('<key>') { ENV['google_api_key'] }
 end

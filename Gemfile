@@ -26,8 +26,8 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
-gem 'jsonapi-serializer'
 gem 'graphql'
+gem 'jsonapi-serializer'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
@@ -35,18 +35,19 @@ gem 'rack-cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'faker'
+  gem 'pry'
+  gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
+  gem 'graphiql-rails'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'graphiql-rails'
 end
 
 group :test do
