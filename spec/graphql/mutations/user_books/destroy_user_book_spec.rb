@@ -2,28 +2,31 @@ require 'rails_helper'
 module Mutations
   module UserBooks
     RSpec.describe DestroyUserBook, type: :request do
-      describe 'Destroy User' do
+      describe 'Destroy UserBook' do
         before :each do
-          create_list(:user, 3)
-          @user_count = User.count
-          @deletion_id = User.last.id
+          @user_1 = create(:user)
+          @book_1 = create(:book)
+
+          @user_book_1 = create(:user_book, user_id: @user_1.id, book_id: @book_1.id)
+
+          @user_book_count = UserBook.count
+          @deletion_id = UserBook.last.id
         end
         it 'deletes a user' do
-          expect(@user_count).to eq(3)
+          expect(@user_book_count).to eq(1)
           post '/graphql', params: {query: query}
-          expect(User.count).to eq(2)
+          expect(UserBook.count).to eq(0)
           json = JSON.parse(response.body)
-          data = json['data']['destroyUser']
+          data = json['data']['destroyUserBook']
 
-          expect(data["id"].to_i).to eq(@deletion_id)
+          expect(data['id'].to_i).to eq(@deletion_id)
         end
-
       end
 
       def query
         <<~GQL
           mutation{
-            destroyUser(input:{id: "#{@deletion_id}"}){
+            destroyUserBook(input:{id: "#{@deletion_id}"}){
               id
             }
           }

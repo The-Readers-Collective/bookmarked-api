@@ -8,8 +8,7 @@ module Types
     field :destroy_book, mutation: Mutations::Books::DestroyBook
     field :create_book, mutation: Mutations::Books::CreateBook
 
-    # field :update_user_book, mutation: Mutations::UserBooks::UpdateUserBook
-    # field :destroy_user_book, mutation: Mutations::UserBooks::DestroyUserBook
+    field :destroy_user_book, mutation: Mutations::UserBooks::DestroyUserBook
     field :create_user_book, mutation: Mutations::UserBooks::CreateUserBook
 
 
