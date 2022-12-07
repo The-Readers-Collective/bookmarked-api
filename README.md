@@ -1,5 +1,7 @@
 # Back End Repository for Bookmarked
 
+[Deployed BE Site](https://bookmarked-api.herokuapp.com/graphql)
+
 [Return to Main Page](https://github.com/The-Readers-Collective)
 
 ## Table of Contents
@@ -26,7 +28,7 @@
 
 ## All Available API End Points:
 
-`http://localhost:3000/graphiql`
+`POST https://bookmarked-api.herokuapp.com/graphql`
 
 **note query params can contain as many or as little fields as you want, adjust query as needed.*
 
@@ -421,7 +423,7 @@ query {
 * Clone your fork
 * From the command line, install gems and set up your DB:
     * `bundle`
-    * `rails db:create`
+    * `rails db:{create,migrate,seed}`
 * Run the test suite with `bundle exec rspec`.
 * Run your development server with `rails s` to see the app in action.
 
