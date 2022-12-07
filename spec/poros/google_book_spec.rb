@@ -26,4 +26,12 @@ RSpec.describe 'Google Book Poro' do
 
     end
   end
+  context 'Sad Path' do
+    xit 'concatenates an array of categories into one string' do
+
+    end
+    xit 'concatenates an array of authors into one string' do
+      
+    end
+  end
 end
