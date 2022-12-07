@@ -32,15 +32,15 @@ module Mutations
                 updatedAt: "2022-12-06T23:34:59Z"
               }){
               book {
-                id
-                googleBookId
-                isbn13
-                author
-                bookTitle
-                bookCover
-                category
-                condition
-                available
+                id,
+                googleBookId,
+                isbn13,
+                author,
+                bookTitle,
+                bookCover,
+                category,
+                condition,
+                available,
                 updatedAt
               }
               errors
