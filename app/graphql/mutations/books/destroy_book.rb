@@ -1,4 +1,4 @@
-class  Mutations::Books::DestroyBook <  Mutations::BaseMutation
+class Mutations::Books::DestroyBook < Mutations::BaseMutation
   argument :id, ID, required: true
 
   field :id, ID, null: true
@@ -12,4 +12,3 @@ class  Mutations::Books::DestroyBook <  Mutations::BaseMutation
     }
   end
 end
-
