@@ -4,7 +4,6 @@ FactoryBot.define do
     book_title { Faker::Book.title }
     author { Faker::Book.author }
     isbn_13 { Faker::Number.number(digits: 10) }
-    status { 1 }
     condition { "Good" }
     category { "Adventure" }
     book_cover { Faker::Internet.domain_name }

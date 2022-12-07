@@ -6,7 +6,7 @@ module Mutations
       describe 'book creation' do
         it 'creates and returns a book' do
           expect(Book.count).to eq(0)
-          post '/graphql', params: { query: mutation }
+          post '/graphql', params: { query: query }
           expect(Book.count).to eq(1)
           json = JSON.parse(response.body)
           data = json['data']["createBook"]
@@ -17,7 +17,7 @@ module Mutations
 
       end
 
-      def mutation
+      def query
         <<~GQL
           mutation{
             createBook(input:{
@@ -29,7 +29,6 @@ module Mutations
                 category: "Fiction"
                 condition: "Excellent"
                 available: true
-                updatedAt: "2022-12-06T23:34:59Z"
               }){
               book {
                 id,
