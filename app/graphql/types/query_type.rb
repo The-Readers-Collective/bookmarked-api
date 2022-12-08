@@ -32,6 +32,19 @@ module Types
     def book(id:)
       Book.find(id)
     end
+
+    field :user_books, [Types::UserBookType], null: false
+
+    def user_books
+      UserBook.all
+    end
     
+    field :user_book, Types::UserBookType, null: false do
+      argument :id, ID, required: true
+    end
+
+    def user_book(id:)
+      UserBook.find(id)
+    end
   end
 end
