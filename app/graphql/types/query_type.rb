@@ -40,5 +40,13 @@ module Types
     def google_books(title:)
       GoogleBooksFacade.books_by_name(title)
     end
+
+    field :google_book, [Types::GoogleBookType], null: false do
+      argument :googleBookID, String, required: true
+    end
+
+    def google_book(googleBookID:)
+      GoogleBooksFacade.books_by_name(googleBookID)
+    end
   end
 end
