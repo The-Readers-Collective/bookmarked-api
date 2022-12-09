@@ -26,6 +26,7 @@
   - [View Books Bookmarked by User](#view-books-owned-by-user)
   - [Google Book API Queries](#google-book-api-queries)
     - [Search for all books by Title](#search-for-all-books-by-title)
+	- [Search for book by GoogleBookId](#search-for-google-book-by-googlebookid)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -1001,7 +1002,65 @@ query {
   }
 }
 ```
+#### Search for Google Book by GoogleBookId
+Lets you search Google Book API via the GoogleBookId
 
+<b>Example Query:</b>
+```json
+query{
+  googleBook(googleBookID: "QCPBDwAAQBAJ") {
+    googleBookId
+    bookTitle
+    bookCover
+    author
+    isbn13
+	pageCount
+    description
+    category
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+    "data": {
+        "googleBook": [
+            {
+                "googleBookId": "QCPBDwAAQBAJ",
+                "bookTitle": "Rhythm of War",
+                "bookCover": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "author": "Brandon Sanderson",
+                "isbn13": "9781429952040",
+                "pageCount": 1374,
+                "description": "An instant #1 New York Times Bestseller and a USA Today and Indie Bestseller! The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson's #1 New York Times bestselling Oathbringer, from an epic fantasy writer at the top of his game. After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "category": "Fiction"
+            },
+            {
+                "googleBookId": "QcpBDwAAQBAJ",
+                "bookTitle": "Біле Ікло (з ілюстраціями)",
+                "bookCover": "http://books.google.com/books/content?id=QcpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "author": "Джек Лондон",
+                "isbn13": "9785040938896",
+                "pageCount": 241,
+                "description": "Безкраї та суворі північні краї накладають відбиток на життя людей і тварин. Їх непереборна сила здатна зламати будь-кого, і тільки наймужніші та найвитриваліші здатні цю силу здолати. Саме таким і був головний герой повісті Джека Лондона – ні, не людина, а вовк на ймення Біле Ікло, що відмінно засвоїв науку виживати в будь-яких несприятливих умовах.Письменник в деталях описує психологію, мотиви поведінки і вчинки Білого Ікла, показує, як доброта і ласка по відношенню до живої істоти вчить його платити любов'ю за любов. А для розумного прирученого вовка любов була дорожча за життя.Ілюстрації Валерії Гогіної.",
+                "category": "Juvenile Fiction"
+            },
+            {
+                "googleBookId": "qCpBDwAAQBAJ",
+                "bookTitle": "Persoonlijkheidsdiagnostiek in de klinische praktijk",
+                "bookCover": "http://books.google.com/books/content?id=qCpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "author": "W.M. Snellen",
+                "isbn13": "9789036819398",
+                "pageCount": 319,
+                "description": "Dit boek helpt klinische professionals om het uiterste uit hun psychodiagnostische onderzoeksmateriaal te halen. Het leert ze om de resultaten van persoonlijkheidsdiagnostiek optimaal te integreren en te interpreteren. Daarbij geeft het boek antwoord op vragen als: welke betekenis moet je toekennen aan psychische klachten en symptomen? En hoe kun je de resultaten van persoonlijkheidsdiagnostiek in een individuele context plaatsen? Zo krijgt de psychodiagnosticus een helder beeld van de veerkracht én de kwetsbaarheid van de cliënt. In Persoonlijkheidsdiagnostiek in de klinische praktijk wordt persoonlijkheidsonderzoek bij cliënten met psychopathologie voor het eerst behandeld uit het perspectief van de psychodiagnosticus zelf. De theoriegestuurde methodische visie en werkwijze worden in dit nieuwe standaardwerk geïllustreerd met casuïstiek, waarbij er ook aandacht is voor de belangrijkste valkuilen. De beslisbomen en stappenplannen ondersteunen de lezer bij zijn dagelijkse diagnostische werkzaamheden. Het boek is bestemd voor professionals werkzaam in de GGZ, zoals gz-psychologen, psychotherapeuten, klinisch psychologen, psychiaters en zij die daartoe in opleiding zijn. Wim Snellen is expert op het gebied van de persoonlijkheidsdiagnostiek. Hij werkte ruim veertig jaar als klinisch psycholoog in de psychiatrie en heeft uitgebreide ervaring met het geven van cursussen, supervisie en onderwijs in dit vakgebied.",
+                "category": "Psychology"
+            }
+        ]
+    }
+}
+```
 
 ## Local Setup
 
