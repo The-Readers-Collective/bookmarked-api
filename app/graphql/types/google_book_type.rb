@@ -7,6 +7,8 @@ module Types
     field :author, String
     field :isbn_13, String
     field :category, String
+    field :page_count, Int
+    field :description, String
     field :book_cover, String
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false

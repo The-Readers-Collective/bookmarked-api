@@ -19,6 +19,10 @@ RSpec.describe 'Google Book Poro' do
       expect(book.author).to eq("Brandon Sanderson")
       expect(book.isbn_13).to be_a String
       expect(book.isbn_13).to eq("9781429952040")
+      expect(book.page_count).to be_a Integer
+      expect(book.page_count).to eq(1374)
+      expect(book.description).to be_a String
+      expect(book.description).to include("An instant #1 New York Times Bestseller and a USA Today")
       expect(book.category).to be_a String
       expect(book.category).to eq("Fiction")
       expect(book.book_cover).to be_a String
