@@ -47,25 +47,115 @@ book_39 = Book.create!(google_book_id: "EA1wODXZM_AC", book_title: "The Shadow R
 book_40 = Book.create!(google_book_id: "XRcOswEACAAJ", book_title: "The Bad Beginning", author: "Lemony Snicket", isbn_13: "9781405281782", pg_count: 192, description: "'If you are interested in stories with happy endings, you would be better off reading some other book.' Violet, Klaus and Sunny Baudelaire are most unfortunate children. Orphaned after the sudden death of their parents in a house fire, they are left in the hands of their guardian, Count Olaf, who has diabolical plans for them . . . 'A Series of Unfortunate Events' has sold more than 60 million copies worldwide, has been translated into 41 languages and was adapted into a 2004 film starring Jim Carrey. 'Wicked good fun' - Kirkus Reviews", condition: "Good", category: "Brothers and sisters", book_cover: "http://books.google.com/books/content?id=XRcOswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api", available: true)
 book_41 = Book.create!(google_book_id: "QVn-CgAAQBAJ", book_title: "The Way of Kings", author: "Brandon Sanderson", isbn_13: "9780765376671", pg_count: 1013, description: "Introduces the world of Roshar through the experiences of a war-weary royal compelled by visions, a highborn youth condemned to military slavery, and a woman who is desperate to save her impoverished house.", condition: "Good", category: "Fiction", book_cover: "http://books.google.com/books/content?id=QVn-CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: true)
 book_42 = Book.create!(google_book_id: "pn7ZCwAAQBAJ", book_title: "Morning Star", author: "Pierce Brown", isbn_13: "9780345539847", pg_count: 545, description: "#1 NEW YORK TIMES BESTSELLER • Red Rising thrilled readers and announced the presence of a talented new author. Golden Son changed the game and took the story of Darrow to the next level. Now comes the exhilarating next chapter in the Red Rising Saga: Morning Star. ITW THRILLER AWARD FINALIST • “[Brown’s] achievement is in creating an uncomfortably familiar world of flaw, fear, and promise.”—Entertainment Weekly Darrow would have lived in peace, but his enemies brought him war. The Gold overlords demanded his obedience, hanged his wife, and enslaved his people. But Darrow is determined to fight back. Risking everything to transform himself and breach Gold society, Darrow has battled to survive the cutthroat rivalries that breed Society’s mightiest warriors, climbed the ranks, and waited patiently to unleash the revolution that will tear the hierarchy apart from within. Finally, the time has come. But devotion to honor and hunger for vengeance run deep on both sides. Darrow and his comrades-in-arms face powerful enemies without scruple or mercy. Among them are some Darrow once considered friends. To win, Darrow will need to inspire those shackled in darkness to break their chains, unmake the world their cruel masters have built, and claim a destiny too long denied—and too glorious to surrender. Praise for Morning Star “There is no one writing today who does shameless, Michael Bay–style action set pieces the way Brown does. The battle scenes are kinetic, bloody, breathless, crazy. Everything is on fire all the time.”—NPR “Morning Star is this trilogy’s Return of the Jedi. . . . The impactful battles that make up most of Morning Star are damn near operatic. . . . It absolutely satisfies.”—Tordotcom “Excellent . . . Brown’s vivid, first-person prose puts the reader right at the forefront of impassioned speeches, broken families, and engaging battle scenes . . . as this interstellar civil war comes to a most satisfying conclusion.”—Publishers Weekly (starred review) “A page-turning epic filled with twists and turns . . . The conclusion to Brown’s saga is simply stellar.”—Booklist (starred review) Don’t miss any of Pierce Brown’s Red Rising Saga: RED RISING • GOLDEN SON • MORNING STAR • IRON GOLD • DARK AGE • LIGHT BRINGER", condition: "Poor", category: "Fiction", book_cover: "http://books.google.com/books/content?id=pn7ZCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: false)
-book_43 = Book.create!(google_book_id: "1q_xAwAAQBAJ", book_title: "Oh, the Places You'll Go!", author: "Dr. Seuss", isbn_13: "9780385371988", pg_count: 56, description: "A perennial favorite, Dr. Seuss’s wonderfully wise graduation speech is the perfect send-off for children starting out in the world, be they nursery school, high school, or college grads! From soaring to high heights and seeing great sights to being left in a Lurch on a prickle-ly perch, Dr. Seuss addresses life’s ups and downs with his trademark humorous verse and illustrations, while encouraging readers to find the success that lies within. In a starred review, Booklist notes: “Seuss’s message is simple but never sappy: life may be a ‘Great Balancing Act,’ but through it all ‘There’s fun to be done.’” This Read & Listen edition contains audio narration.", condition: "Good", category: "Childrens Book", book_cover:"http://books.google.com/books/content?id=1q_xAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: true)
-book_44 = Book.create!(google_book_id: "BSuJEAAAQBAJ", book_title: "The Dragonbone Chair", author: "Tad Williams", isbn_13: "9780756402693", pg_count: 674, description: "Simon, a young kitchen boy and magician's apprentice, finds his dreams of great deeds and heroic wars becoming an all too shocking reality in a terrifying civil war.", condition: "Excellent", category: "Fiction", book_cover:"http://books.google.com/books/content?id=BSuJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: false)
+book_43 = Book.create!(google_book_id: "1q_xAwAAQBAJ", book_title: "Oh, the Places You'll Go!", author: "Dr. Seuss", isbn_13: "9780385371988", pg_count: 56, description: "A perennial favorite, Dr. Seuss’s wonderfully wise graduation speech is the perfect send-off for children starting out in the world, be they nursery school, high school, or college grads! From soaring to high heights and seeing great sights to being left in a Lurch on a prickle-ly perch, Dr. Seuss addresses life’s ups and downs with his trademark humorous verse and illustrations, while encouraging readers to find the success that lies within. In a starred review, Booklist notes: “Seuss’s message is simple but never sappy: life may be a ‘Great Balancing Act,’ but through it all ‘There’s fun to be done.’” This Read & Listen edition contains audio narration.", condition: "Good", category: "Childrens Book", book_cover: "http://books.google.com/books/content?id=1q_xAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: true)
+book_44 = Book.create!(google_book_id: "BSuJEAAAQBAJ", book_title: "The Dragonbone Chair", author: "Tad Williams", isbn_13: "9780756402693", pg_count: 674, description: "Simon, a young kitchen boy and magician's apprentice, finds his dreams of great deeds and heroic wars becoming an all too shocking reality in a terrifying civil war.", condition: "Excellent", category: "Fiction", book_cover: "http://books.google.com/books/content?id=BSuJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: false)
+book_45 = Book.create!(google_book_id: "QAKWDwAAQBAJ", book_title: "Wild (Movie Tie-in Edition)", author: "Cheryl Strayed", isbn_13: "9781101873441", pg_count: 338, description: "#1 NEW YORK TIMES BESTSELLER • A powerful, blazingly honest memoir: the story of an eleven-hundred-mile solo hike that broke down a young woman reeling from catastrophe—and built her back up again. At twenty-two, Cheryl Strayed thought she had lost everything. In the wake of her mother’s death, her family scattered and her own marriage was soon destroyed. Four years later, with nothing more to lose, she made the most impulsive decision of her life. With no experience or training, driven only by blind will, she would hike more than a thousand miles of the Pacific Crest Trail from the Mojave Desert through California and Oregon to Washington State—and she would do it alone. Told with suspense and style, sparkling with warmth and humor, Wild powerfully captures the terrors and pleasures of one young woman forging ahead against all odds on a journey that maddened, strengthened, and ultimately healed her.", condition: "Excellent", category: "Biography & Autobiography", book_cover: "http://books.google.com/books/content?id=QAKWDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", available: false)
 
 
 user_1 = User.create!(name: "Sandy M", zipcode: "80241", email: "sandy@gmail.com")
-#owned = status: 0
+#total Owned: 10
+#owned == status: 0
 UserBook.create!(user_id: user_1.id, book_id: book_1.id, status: 0)
 UserBook.create!(user_id: user_1.id, book_id: book_2.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_3.id, status: 0)
 UserBook.create!(user_id: user_1.id, book_id: book_4.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_5.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_6.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_7.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_8.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_9.id, status: 0)
+UserBook.create!(user_id: user_1.id, book_id: book_10.id, status: 0)
 
-#bookmarked/favorited = status: 1
-UserBook.create!(user_id: user_1.id, book_id: book_3.id, status: 1)
+#bookmarked/favorited == status: 1
+UserBook.create!(user_id: user_1.id, book_id: book_11.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_21.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_31.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_41.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_44.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_12.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_22.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_32.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_42.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_43.id, status: 1)
+UserBook.create!(user_id: user_1.id, book_id: book_40.id, status: 1)
 
 user_2 = User.create!(name: "Joe B", zipcode: "80020", email: "Bob@gmail.com")
-#owned
-UserBook.create!(user_id: user_1.id, book_id: book_1.id, status: 0)
-UserBook.create!(user_id: user_1.id, book_id: book_2.id, status: 0)
-UserBook.create!(user_id: user_1.id, book_id: book_4.id, status: 1)
+#total Owned: 10
+#owned == status: 0
+UserBook.create!(user_id: user_2.id, book_id: book_11.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_12.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_13.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_14.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_15.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_16.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_17.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_18.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_19.id, status: 0)
+UserBook.create!(user_id: user_2.id, book_id: book_20.id, status: 0)
 
-#bookmarked/favorited
-UserBook.create!(user_id: user_2.id, book_id: book_3.id, status: 0)
+#bookmarked/favorited = status: 1
+UserBook.create!(user_id: user_2.id, book_id: book_12.id, status: 1)
+UserBook.create!(user_id: user_2.id, book_id: book_22.id, status: 1)
+UserBook.create!(user_id: user_2.id, book_id: book_32.id, status: 1)
+UserBook.create!(user_id: user_2.id, book_id: book_42.id, status: 1)
+UserBook.create!(user_id: user_2.id, book_id: book_43.id, status: 1)
+UserBook.create!(user_id: user_2.id, book_id: book_44.id, status: 1)
 
+user_3 = User.create!(name: "Paul B", zipcode: "32811", email: "paul@gmail.com")
+#total Owned: 10
+#owned == status: 0
+UserBook.create!(user_id: user_3.id, book_id: book_21.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_22.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_23.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_24.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_25.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_26.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_27.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_28.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_29.id, status: 0)
+UserBook.create!(user_id: user_3.id, book_id: book_30.id, status: 0)
+
+#bookmarked/favorited = status: 1
+UserBook.create!(user_id: user_3.id, book_id: book_13.id, status: 1)
+UserBook.create!(user_id: user_3.id, book_id: book_23.id, status: 1)
+UserBook.create!(user_id: user_3.id, book_id: book_18.id, status: 1)
+UserBook.create!(user_id: user_3.id, book_id: book_29.id, status: 1)
+UserBook.create!(user_id: user_3.id, book_id: book_19.id, status: 1)
+UserBook.create!(user_id: user_3.id, book_id: book_8.id, status: 1)
+
+user_4 = User.create!(name: "Jane D", zipcode: "97203", email: "jane@gmail.com")
+#total Owned: 14 
+#owned == status: 0
+UserBook.create!(user_id: user_4.id, book_id: book_31.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_32.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_33.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_34.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_35.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_36.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_37.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_38.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_39.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_40.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_41.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_42.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_43.id, status: 0)
+UserBook.create!(user_id: user_4.id, book_id: book_44.id, status: 0)
+
+#bookmarked/favorited = status: 1
+UserBook.create!(user_id: user_4.id, book_id: book_15.id, status: 1)
+UserBook.create!(user_id: user_4.id, book_id: book_2.id, status: 1)
+UserBook.create!(user_id: user_4.id, book_id: book_27.id, status: 1)
+
+user_5 = User.create!(name: "Lauren S", zipcode: "80014", email: "lauren@gmail.com")
+#total Owned: 1 
+#owned == status: 0
+UserBook.create!(user_id: user_5.id, book_id: book_45.id, status: 0)
+
+#bookmarked/favorited = status: 1
+UserBook.create!(user_id: user_5.id, book_id: book_15.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_2.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_27.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_35.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_36.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_37.id, status: 1)
+UserBook.create!(user_id: user_5.id, book_id: book_38.id, status: 1)
