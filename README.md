@@ -22,6 +22,8 @@
   - [Update Book](#update-a-book)
   - [Create a UserBook relationship](#create-a-userbook-relationship)
   - [Delete a UserBook relationship](#delete-a-userbook-relationship)
+  - [Google Book API Queries](#google-book-api-queries)
+    - [Search for all books by Title](#search-for-all-books-by-title)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -766,6 +768,139 @@ mutation{
     }
 }
 ```
+### Google Book API Queries
+Current Google Book API queries:
+
+#### Search for all books by Title
+Lets you ping Google API search by Book Title
+
+<b>Example Query:</b>
+```json
+query {
+	googleBooks(title:"Lord of the rings") {
+    bookTitle
+    bookCover
+    author
+    category
+    description
+    googleBookId
+    isbn13
+    pageCount
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "googleBooks": [
+      {
+        "bookTitle": "The Lord Of The Rings",
+        "bookCover": "http://books.google.com/books/content?id=yl4dILkcqm4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "author": "J.R.R. Tolkien",
+        "category": "Fiction",
+        "description": "Immerse yourself in Middle-earth with J.R.R. Tolkien’s classic masterpieces behind the films... This special 50th anniversary edition includes three volumes of The Lord of the Rings (The Fellowship of the Ring, The Two Towers, and The Return of the King), along with an extensive new index—a must-own tome for old and new Tolkien readers alike. One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins. From Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings to him, but always he searched for the One Ring that would complete his dominion. When Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom. The Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. J.R.R. Tolkien (1892-1973), beloved throughout the world as the creator of The Hobbit, The Lord of the Rings, and The Silmarillion, was a professor of Anglo-Saxon at Oxford, a fellow of Pembroke College, and a fellow of Merton College until his retirement in 1959. His chief interest was the linguistic aspects of the early English written tradition, but while he studied classic works of the past, he was creating a set of his own.",
+        "googleBookId": "yl4dILkcqm4C",
+        "isbn13": "9780547951942",
+        "pageCount": 1216
+      },
+      {
+        "bookTitle": "The Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=GuLZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "John Ronald Reuel Tolkien",
+        "category": "Fiction",
+        "description": "An epic depicting the Great War of the Ring, a struggle between good and evil in Middle-Earth, in which the tiny Hobbits play a key role.",
+        "googleBookId": "GuLZAAAAMAAJ",
+        "isbn13": "PSU:000062491532",
+        "pageCount": 1157
+      },
+      {
+        "bookTitle": "Understanding the Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=GEWXQbASXZUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "author": "Rose A. Zimbardo, Neil D. Isaacs",
+        "category": "Literary Criticism",
+        "description": "Selected essays on Tolkien's trilogy include W. H. Auden's essay on the hero's quest, C. S. Lewis's piece on the value of myth, Marion Zimmer Bradley's article on hero worship, Tim Shippey's piece on the film trilogy, and much more. Original.",
+        "googleBookId": "GEWXQbASXZUC",
+        "isbn13": "0618422536",
+        "pageCount": 308
+      },
+      {
+        "bookTitle": "The Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=636fngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "J. R. R. Tolkien, Alan Lee",
+        "category": "Fantasy fiction",
+        "description": "A sumptuous new one-volume edition of Tolkien's classic masterpiece that is fully illustrated in watercolour throughout by the acclaimed and award-winning artist, Alan Lee. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivalled magic and otherworldliness, its sweeping fantasy has touched the hearts of young and old alike. Well over 100 million copies of its many editions have been sold around the world, and occasional collectors' editions become prized and valuable items of publishing. With the epic trilogy now an acclaimed, award-winning and billion-dollar success, images of the characters and landscapes have become iconic to a whole new generation of readers. Much of the look of these movies is based on Alan Lee's paintings, giving this sumptuous new edition of Tolkien's great work new relevance for the ever-growing number of fans.",
+        "googleBookId": "636fngEACAAJ",
+        "isbn13": "0007525540",
+        "pageCount": 1200
+      },
+      {
+        "bookTitle": "The Lord of the Rings Boxed Set",
+        "bookCover": "http://books.google.com/books/content?id=v0XdnQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "J R R Tolkien, Wayne G Hammond",
+        "category": "Fantasy fiction, English",
+        "description": "Four-volume boxed-set edition of The Lord of the Rings in hardback, featuring Tolkien's original unused dust-jacket designs, together with fourth hardback volume, The Lord of the Rings: A Reader's Companion. Includes special features and the definitive edition of the text. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivalled magic and otherworldliness, its sweeping fantasy has touched the hearts of young and old alike, with one hundred and fifty million copies of its many editions sold around the world. In 2005 Tolkien's text was fully restored - with the full co-operation of Christopher Tolkien -- with almost 400 corrections, the original red and black maps as fold-out sheets, a fully revised and enlarged index, and for the first time a special plate section containing the pages from the Book of Mazarbul, making this set as close as possible to the version that J.R.R. Tolkien intended. This Diamond Anniversary reissue of the prized boxed set marks 60 years since the first publication of The Fellowship of the Ring. These hardback editions feature Tolkien's original unused dust-jacket designs from the 1950s, reworked for this edition, and some additional text corrections. The four-volume boxed set includes The Lord of the Rings: A Reader's Companion, a unique annotated guide to the text, fully updated since its first publication in 2005, and is a book which will enhance the reader's enjoyment and understanding of one of the most influential books of the 20th century.",
+        "googleBookId": "v0XdnQEACAAJ",
+        "isbn13": "0007581149",
+        "pageCount": 1472
+      },
+      {
+        "bookTitle": "The Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=esTyzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "J. R. R. TOLKIEN",
+        "category": null,
+        "description": "J.R.R. Tolkien's grand masterwork illustrated with the art created by Tolkien himself as he envisioned Middle-earth A PBS Great American Read Top 100 Pick One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins. From Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings to him, but always he searched for the One Ring that would complete his dominion. When Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom. The Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. This new edition is illustrated with J.R.R. Tolkien's own artwork, created as he wrote the original text.",
+        "googleBookId": "esTyzgEACAAJ",
+        "isbn13": "0063274736",
+        "pageCount": 1248
+      },
+      {
+        "bookTitle": "The Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=7bT5gO7CrVMC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "Brian Sibley",
+        "category": "Performing Arts",
+        "description": "Discusses the making of the movie trilogy based on J.R.R. Tolkien's \"The Lord of the Rings,\" covering topics including filming locations, special effects, costumes, battle scenes, characters, and music.",
+        "googleBookId": "7bT5gO7CrVMC",
+        "isbn13": "0618260226",
+        "pageCount": 190
+      },
+      {
+        "bookTitle": "The Hobbit and the Lord of the Rings Boxed Set",
+        "bookCover": "http://books.google.com/books/content?id=INVTzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "J.r.r. Tolkien",
+        "category": null,
+        "description": "Immerse yourself in Middle-earth with Tolkien's classic masterpiece, telling the complete story of Bilbo Baggins and the Hobbits' epic encounters with Gandalf, Gollum, dragons and monsters, in the quest to destroy the One Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
+        "googleBookId": "INVTzQEACAAJ",
+        "isbn13": "0008387753",
+        "pageCount": 1600
+      },
+      {
+        "bookTitle": "The Lord of the Rings",
+        "bookCover": "http://books.google.com/books/content?id=nh0eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "Wayne G. Hammond, Christina Scull",
+        "category": "Fiction",
+        "description": "A companion reference to the film trilogy and the book presents changes made to the original novel, references to various illustrations and maps, explanations of unique words, and a primer on Tolkien's invented languages.",
+        "googleBookId": "nh0eAQAAIAAJ",
+        "isbn13": "STANFORD:36105114581718",
+        "pageCount": 988
+      },
+      {
+        "bookTitle": "The Middle-Earth Treasury",
+        "bookCover": "http://books.google.com/books/content?id=XuO0tAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "author": "J. R. R. Tolkien",
+        "category": "Fantasy fiction, English",
+        "description": "Deluxe boxed gift set of pocket edition hardbacks featuring J.R.R. Tolkien's most popular works, which together tell the tale of Bilbo and Frodo Baggins and of the War of the Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set, published to mark the 80th anniversary of the publication of The Hobbit, offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
+        "googleBookId": "XuO0tAEACAAJ",
+        "isbn13": "0008260184",
+        "pageCount": 912
+      }
+    ]
+  }
+}
+```
+
 
 ## Local Setup
 
@@ -803,3 +938,4 @@ Sandy M Griffin | [Github](https://github.com/SandyyMarie) | [LinkedIn](https://
 ##
 
 [Back To Top](#back-end-repository-for-bookmarked) 
+
