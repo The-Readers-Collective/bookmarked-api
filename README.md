@@ -24,6 +24,7 @@
   - [Delete a UserBook relationship](#delete-a-userbook-relationship)
   - [View Books Owned by User](#view-books-owned-by-user)
   - [View Books Bookmarked by User](#view-books-owned-by-user)
+  - [View Books by GoogleBookId](#view-books-by-googlebookid)
   - [Google Book API Queries](#google-book-api-queries)
     - [Search for all books by Title](#search-for-all-books-by-title)
 	- [Search for book by GoogleBookId](#search-for-google-book-by-googlebookid)
@@ -773,8 +774,7 @@ mutation{
 ```
 
 ### View Books Owned by User
-Lets you delete the relationship between a user and their book
-
+Lets you view all books owned by user
 <b>Example Query:</b>
 ```json
 query {
@@ -817,8 +817,7 @@ query {
 ```
 
 ### View Books Bookmarked by User
-Lets you delete the relationship between a user and their book
-
+Lets you view all books bookmarked by user
 <b>Example Query:</b>
 ```json
 query {
@@ -866,6 +865,50 @@ query {
         }
       ]
     }
+  }
+}
+```
+
+### View Books by GoogleBookId
+Lets you view all books by GoogleBookID. Also more book attributes are accessible ie bookCover
+
+<b>Example Query:</b>
+```json
+query {
+    booksByGoogleBookId(googleBookId: "aWZzLPhY4o0C") {
+      id
+      bookTitle
+      isbn13
+      author
+   } 
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "booksByGoogleBookId": [
+      {
+        "id": "2",
+        "bookTitle": "The Fellowship Of The Ring",
+        "isbn13": "9780547952017",
+        "author": "J.R.R. Tolkien"
+      },
+      {
+        "id": "6",
+        "bookTitle": "The Fellowship Of The Ring",
+        "isbn13": "9780547952017",
+        "author": "J.R.R. Tolkien"
+      },
+      {
+        "id": "16",
+        "bookTitle": "The Fellowship Of The Ring",
+        "isbn13": "9780547952017",
+        "author": "J.R.R. Tolkien"
+      }
+    ]
   }
 }
 ```
