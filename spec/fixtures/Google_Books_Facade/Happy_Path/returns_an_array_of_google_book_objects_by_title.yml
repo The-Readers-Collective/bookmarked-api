@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 07 Dec 2022 19:30:17 GMT
+      - Fri, 09 Dec 2022 21:50:40 GMT
       Server:
       - ESF
       Cache-Control:
@@ -51,7 +51,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "/OHP2IDNREk",
+              "etag": "VjdXDX1xk+E",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -150,7 +150,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "NNt9zgEACAAJ",
-              "etag": "g9RWIYsJwgc",
+              "etag": "V262bEHfcao",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/NNt9zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part One",
@@ -220,7 +220,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "N093zgEACAAJ",
-              "etag": "4k0+9dvSjtw",
+              "etag": "KGnIHBHFG/Y",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/N093zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part Two",
@@ -290,7 +290,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "90nDzQEACAAJ",
-              "etag": "RffkxbWXBYE",
+              "etag": "37uabvpEuD8",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/90nDzQEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War SIGNED EDITION",
@@ -354,7 +354,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "q-przQEACAAJ",
-              "etag": "Dktgkm8jJWg",
+              "etag": "DVJ9zTfNoaE",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/q-przQEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -418,7 +418,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "kkrdaXQ5yVc",
+              "etag": "FXeAqbE5QzE",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -517,7 +517,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wrtRAwAACAAJ",
-              "etag": "D7x9rTxItVY",
+              "etag": "j3bTucWIQkU",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wrtRAwAACAAJ",
               "volumeInfo": {
                 "title": "The Rhythm of War in a Civilised World",
@@ -585,7 +585,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "LF-REAAAQBAJ",
-              "etag": "VeM2k28ixqw",
+              "etag": "DA2NgvMw6nU",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/LF-REAAAQBAJ",
               "volumeInfo": {
                 "title": "El ritmo de la guerra / Rhythm of War",
@@ -658,7 +658,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "a_EPZSGORPgC",
-              "etag": "lmQ3B5GmyUo",
+              "etag": "7Qw8R2ys7Qk",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/a_EPZSGORPgC",
               "volumeInfo": {
                 "title": "Blue Rhythms",
@@ -733,7 +733,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wNfx07-AJwcC",
-              "etag": "iO/OgMfR7fs",
+              "etag": "UudVSf+l0RI",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wNfx07-AJwcC",
               "volumeInfo": {
                 "title": "Rhythm and Blues, Rap, and Hip-hop",
@@ -806,5 +806,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Wed, 07 Dec 2022 19:30:17 GMT
+  recorded_at: Fri, 09 Dec 2022 21:50:40 GMT
 recorded_with: VCR 6.1.0

@@ -7,6 +7,13 @@ class GoogleBooksService
     parse_body(response)
   end
 
+  def self.book_by_google_book_id(google_book_id)
+    response = conn.get("/books/v1/volumes/") do |req|
+      req.params['q'] = "#{google_book_id}"
+    end
+    parse_body(response)
+  end
+
   def self.conn 
     Faraday.new(url: "https://www.googleapis.com",
                 params: { key: ENV['google_api_key'] }
