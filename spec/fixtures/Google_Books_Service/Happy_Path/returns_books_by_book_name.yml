@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 07 Dec 2022 19:30:17 GMT
+      - Fri, 09 Dec 2022 21:50:41 GMT
       Server:
       - ESF
       Cache-Control:
@@ -46,12 +46,12 @@ http_interactions:
       string: |
         {
           "kind": "books#volumes",
-          "totalItems": 255,
+          "totalItems": 251,
           "items": [
             {
               "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "Jq9+VAWY9w0",
+              "etag": "dWHjhbLrvSc",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -150,7 +150,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "NNt9zgEACAAJ",
-              "etag": "4yV6a81TK8E",
+              "etag": "l8iQqRdmlGQ",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/NNt9zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part One",
@@ -220,7 +220,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "N093zgEACAAJ",
-              "etag": "G7dlZjsh9jE",
+              "etag": "SM1v4fXieao",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/N093zgEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War Part Two",
@@ -290,7 +290,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "90nDzQEACAAJ",
-              "etag": "kImkdbZpL9s",
+              "etag": "NSBxlDb3HiU",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/90nDzQEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War SIGNED EDITION",
@@ -354,7 +354,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "q-przQEACAAJ",
-              "etag": "e/FnB0r7esY",
+              "etag": "IPHACaHqa0k",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/q-przQEACAAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -418,7 +418,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "QCPBDwAAQBAJ",
-              "etag": "KXPNeCkIHaI",
+              "etag": "Mu4piAKvUYA",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
               "volumeInfo": {
                 "title": "Rhythm of War",
@@ -517,7 +517,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wrtRAwAACAAJ",
-              "etag": "r7X1aMoW7UY",
+              "etag": "qmj3XHrdMR8",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wrtRAwAACAAJ",
               "volumeInfo": {
                 "title": "The Rhythm of War in a Civilised World",
@@ -585,7 +585,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "LF-REAAAQBAJ",
-              "etag": "5EKoZ+POX88",
+              "etag": "Fshd267AnM4",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/LF-REAAAQBAJ",
               "volumeInfo": {
                 "title": "El ritmo de la guerra / Rhythm of War",
@@ -658,7 +658,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "a_EPZSGORPgC",
-              "etag": "60z3x9GR9kA",
+              "etag": "7ouJiOgUu6s",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/a_EPZSGORPgC",
               "volumeInfo": {
                 "title": "Blue Rhythms",
@@ -733,7 +733,7 @@ http_interactions:
             {
               "kind": "books#volume",
               "id": "wNfx07-AJwcC",
-              "etag": "bF/qH5PoJgw",
+              "etag": "KRmeN57Qjtk",
               "selfLink": "https://www.googleapis.com/books/v1/volumes/wNfx07-AJwcC",
               "volumeInfo": {
                 "title": "Rhythm and Blues, Rap, and Hip-hop",
@@ -806,5 +806,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Wed, 07 Dec 2022 19:30:16 GMT
+  recorded_at: Fri, 09 Dec 2022 21:50:41 GMT
 recorded_with: VCR 6.1.0
