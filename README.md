@@ -22,6 +22,8 @@
   - [Update Book](#update-a-book)
   - [Create a UserBook relationship](#create-a-userbook-relationship)
   - [Delete a UserBook relationship](#delete-a-userbook-relationship)
+  - [View Books Owned by User](#view-books-owned-by-user)
+  - [View Books Bookmarked by User](#view-books-owned-by-user)
   - [Google Book API Queries](#google-book-api-queries)
     - [Search for all books by Title](#search-for-all-books-by-title)
 3. [Local Setup](#local-setup)
@@ -768,6 +770,105 @@ mutation{
     }
 }
 ```
+
+### View Books Owned by User
+Lets you delete the relationship between a user and their book
+
+<b>Example Query:</b>
+```json
+query {
+  user(id: 1) {
+    allOwnedBooks {
+      id
+      bookTitle
+      googleBookId
+    }
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "user": {
+      "allOwnedBooks": [
+        {
+          "id": "1",
+          "bookTitle": "Caliban's War",
+          "googleBookId": "tXGRBgwxAHIC"
+        },
+        {
+          "id": "2",
+          "bookTitle": "The Fellowship Of The Ring",
+          "googleBookId": "aWZzLPhY4o0C"
+        },
+        {
+          "id": "3",
+          "bookTitle": "A Game of Thrones",
+          "googleBookId": "hffZtgAACAAJ"
+        }
+      ]
+    }
+  }
+}
+```
+
+### View Books Bookmarked by User
+Lets you delete the relationship between a user and their book
+
+<b>Example Query:</b>
+```json
+query {
+  user(id: 1) {
+    allBookmarkedBooks {
+      id
+      bookTitle
+      googleBookId
+    }
+  }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "user": {
+      "allBookmarkedBooks": [
+        {
+          "id": "11",
+          "bookTitle": "Twilight",
+          "googleBookId": "ZfjzX7M8zt0C"
+        },
+        {
+          "id": "21",
+          "bookTitle": "Warriors: Cats of the Clans",
+          "googleBookId": "i5PTBqxDO4cC"
+        },
+        {
+          "id": "31",
+          "bookTitle": "Babel",
+          "googleBookId": "ZWRQEAAAQBAJ"
+        },
+        {
+          "id": "41",
+          "bookTitle": "The Way of Kings",
+          "googleBookId": "QVn-CgAAQBAJ"
+        },
+        {
+          "id": "44",
+          "bookTitle": "The Dragonbone Chair",
+          "googleBookId": "BSuJEAAAQBAJ"
+        }
+      ]
+    }
+  }
+}
+```
+
 ### Google Book API Queries
 Current Google Book API queries:
 
@@ -938,4 +1039,3 @@ Sandy M Griffin | [Github](https://github.com/SandyyMarie) | [LinkedIn](https://
 ##
 
 [Back To Top](#back-end-repository-for-bookmarked) 
-
