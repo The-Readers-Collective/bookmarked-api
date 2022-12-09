@@ -12,7 +12,6 @@ RSpec.describe Types::QueryType do
     end
 
     it 'will return all users and all their books' do
-      require 'pry'; binding.pry
       result = BookmarkedApiSchema.execute(query).as_json
       expect(result["data"]["users"][0]["email"]).to eq("sandy@gmail.com")
       expect(result["data"]["users"][1]["email"]).to eq("Bob@gmail.com")
