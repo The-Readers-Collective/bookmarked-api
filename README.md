@@ -7,27 +7,35 @@
 ## Table of Contents
 
 1. [Architecture and Design](#architecture-and-design)
-2. [Available API End Points](#all-available-api-end-points)
-  - [Create User](#create-user)
-  - [View All Users](#view-all-users)
-  - [View One User](#view-one-user)
-  - [Delete User](#delete-user)
-  - [Update User](#update-user)
-  - [View All Users and their Books](#view-all-users-and-all-books)
-  - [View a single User and their Books](#view-a-single-user-and-their-books)
-  - [View All Books](#view-all-books)
-  - [View One Book](#view-a-single-book)
-  - [Create Book](#create-a-book)
-  - [Delete Book](#delete-a-book)
-  - [Update Book](#update-a-book)
-  - [Create a UserBook relationship](#create-a-userbook-relationship)
-  - [Delete a UserBook relationship](#delete-a-userbook-relationship)
-  - [View Books Owned by User](#view-books-owned-by-user)
-  - [View Books Bookmarked by User](#view-books-owned-by-user)
-  - [View Books by GoogleBookId](#view-books-by-googlebookid)
-  - [Google Book API Queries](#google-book-api-queries)
-    - [Search for all books by Title](#search-for-all-books-by-title)
-	- [Search for book by GoogleBookId](#search-for-google-book-by-googlebookid)
+2. [Available API Query Points](#all-available-api-query-points)
+	- Queries
+		- Users
+		  - [View All Users](#view-all-users)
+		  - [View One User](#view-one-user)
+		  - [View All Users and their Books](#view-all-users-and-all-books)
+		  - [View a single User and their Books](#view-a-single-user-and-their-books)
+		- Books
+		  - [View All Books](#view-all-books)
+		  - [View One Book](#view-a-single-book)
+		  - [View Books Owned by User](#view-books-owned-by-user)
+		  - [View Books Bookmarked by User](#view-books-owned-by-user)
+		  - [View Books by GoogleBookId](#view-books-by-googlebookid)
+		- Google Book API Queries
+		  - [Search for all books by Title](#search-for-all-books-by-title)
+		  - [Search for book by GoogleBookId](#search-for-google-book-by-googlebookid)
+
+	- Mutations
+		- Users
+		  - [Create User](#create-user)
+		  - [Delete User](#delete-user)
+		  - [Update User](#update-user)
+		- Books
+			- [Create Book](#create-a-book)
+			- [Delete Book](#delete-a-book)
+			- [Update Book](#update-a-book)
+		- UserBooks
+			- [Create a UserBook relationship](#create-a-userbook-relationship)
+			- [Delete a UserBook relationship](#delete-a-userbook-relationship)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -39,7 +47,7 @@
   <img src="https://github.com/The-Readers-Collective/.github/blob/main/profile/assets/DB_schema_2.png?raw=true" />
 </p>
 
-## All Available API End Points:
+## All Available API Query Points:
 
 `POST https://bookmarked-api.herokuapp.com/graphql`
 
@@ -930,7 +938,7 @@ query {
     description
     googleBookId
     isbn13
-    pageCount
+    pgCount
   }
 }
 ```
@@ -949,7 +957,7 @@ query {
         "description": "Immerse yourself in Middle-earth with J.R.R. Tolkien’s classic masterpieces behind the films... This special 50th anniversary edition includes three volumes of The Lord of the Rings (The Fellowship of the Ring, The Two Towers, and The Return of the King), along with an extensive new index—a must-own tome for old and new Tolkien readers alike. One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins. From Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings to him, but always he searched for the One Ring that would complete his dominion. When Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom. The Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. J.R.R. Tolkien (1892-1973), beloved throughout the world as the creator of The Hobbit, The Lord of the Rings, and The Silmarillion, was a professor of Anglo-Saxon at Oxford, a fellow of Pembroke College, and a fellow of Merton College until his retirement in 1959. His chief interest was the linguistic aspects of the early English written tradition, but while he studied classic works of the past, he was creating a set of his own.",
         "googleBookId": "yl4dILkcqm4C",
         "isbn13": "9780547951942",
-        "pageCount": 1216
+        "pgCount": 1216
       },
       {
         "bookTitle": "The Lord of the Rings",
@@ -959,7 +967,7 @@ query {
         "description": "An epic depicting the Great War of the Ring, a struggle between good and evil in Middle-Earth, in which the tiny Hobbits play a key role.",
         "googleBookId": "GuLZAAAAMAAJ",
         "isbn13": "PSU:000062491532",
-        "pageCount": 1157
+        "pgCount": 1157
       },
       {
         "bookTitle": "Understanding the Lord of the Rings",
@@ -969,7 +977,7 @@ query {
         "description": "Selected essays on Tolkien's trilogy include W. H. Auden's essay on the hero's quest, C. S. Lewis's piece on the value of myth, Marion Zimmer Bradley's article on hero worship, Tim Shippey's piece on the film trilogy, and much more. Original.",
         "googleBookId": "GEWXQbASXZUC",
         "isbn13": "0618422536",
-        "pageCount": 308
+        "pgCount": 308
       },
       {
         "bookTitle": "The Lord of the Rings",
@@ -979,7 +987,7 @@ query {
         "description": "A sumptuous new one-volume edition of Tolkien's classic masterpiece that is fully illustrated in watercolour throughout by the acclaimed and award-winning artist, Alan Lee. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivalled magic and otherworldliness, its sweeping fantasy has touched the hearts of young and old alike. Well over 100 million copies of its many editions have been sold around the world, and occasional collectors' editions become prized and valuable items of publishing. With the epic trilogy now an acclaimed, award-winning and billion-dollar success, images of the characters and landscapes have become iconic to a whole new generation of readers. Much of the look of these movies is based on Alan Lee's paintings, giving this sumptuous new edition of Tolkien's great work new relevance for the ever-growing number of fans.",
         "googleBookId": "636fngEACAAJ",
         "isbn13": "0007525540",
-        "pageCount": 1200
+        "pgCount": 1200
       },
       {
         "bookTitle": "The Lord of the Rings Boxed Set",
@@ -989,7 +997,7 @@ query {
         "description": "Four-volume boxed-set edition of The Lord of the Rings in hardback, featuring Tolkien's original unused dust-jacket designs, together with fourth hardback volume, The Lord of the Rings: A Reader's Companion. Includes special features and the definitive edition of the text. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivalled magic and otherworldliness, its sweeping fantasy has touched the hearts of young and old alike, with one hundred and fifty million copies of its many editions sold around the world. In 2005 Tolkien's text was fully restored - with the full co-operation of Christopher Tolkien -- with almost 400 corrections, the original red and black maps as fold-out sheets, a fully revised and enlarged index, and for the first time a special plate section containing the pages from the Book of Mazarbul, making this set as close as possible to the version that J.R.R. Tolkien intended. This Diamond Anniversary reissue of the prized boxed set marks 60 years since the first publication of The Fellowship of the Ring. These hardback editions feature Tolkien's original unused dust-jacket designs from the 1950s, reworked for this edition, and some additional text corrections. The four-volume boxed set includes The Lord of the Rings: A Reader's Companion, a unique annotated guide to the text, fully updated since its first publication in 2005, and is a book which will enhance the reader's enjoyment and understanding of one of the most influential books of the 20th century.",
         "googleBookId": "v0XdnQEACAAJ",
         "isbn13": "0007581149",
-        "pageCount": 1472
+        "pgCount": 1472
       },
       {
         "bookTitle": "The Lord of the Rings",
@@ -999,7 +1007,7 @@ query {
         "description": "J.R.R. Tolkien's grand masterwork illustrated with the art created by Tolkien himself as he envisioned Middle-earth A PBS Great American Read Top 100 Pick One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins. From Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings to him, but always he searched for the One Ring that would complete his dominion. When Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom. The Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. This new edition is illustrated with J.R.R. Tolkien's own artwork, created as he wrote the original text.",
         "googleBookId": "esTyzgEACAAJ",
         "isbn13": "0063274736",
-        "pageCount": 1248
+        "pgCount": 1248
       },
       {
         "bookTitle": "The Lord of the Rings",
@@ -1009,7 +1017,7 @@ query {
         "description": "Discusses the making of the movie trilogy based on J.R.R. Tolkien's \"The Lord of the Rings,\" covering topics including filming locations, special effects, costumes, battle scenes, characters, and music.",
         "googleBookId": "7bT5gO7CrVMC",
         "isbn13": "0618260226",
-        "pageCount": 190
+        "pgCount": 190
       },
       {
         "bookTitle": "The Hobbit and the Lord of the Rings Boxed Set",
@@ -1019,7 +1027,7 @@ query {
         "description": "Immerse yourself in Middle-earth with Tolkien's classic masterpiece, telling the complete story of Bilbo Baggins and the Hobbits' epic encounters with Gandalf, Gollum, dragons and monsters, in the quest to destroy the One Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
         "googleBookId": "INVTzQEACAAJ",
         "isbn13": "0008387753",
-        "pageCount": 1600
+        "pgCount": 1600
       },
       {
         "bookTitle": "The Lord of the Rings",
@@ -1029,7 +1037,7 @@ query {
         "description": "A companion reference to the film trilogy and the book presents changes made to the original novel, references to various illustrations and maps, explanations of unique words, and a primer on Tolkien's invented languages.",
         "googleBookId": "nh0eAQAAIAAJ",
         "isbn13": "STANFORD:36105114581718",
-        "pageCount": 988
+        "pgCount": 988
       },
       {
         "bookTitle": "The Middle-Earth Treasury",
@@ -1039,7 +1047,7 @@ query {
         "description": "Deluxe boxed gift set of pocket edition hardbacks featuring J.R.R. Tolkien's most popular works, which together tell the tale of Bilbo and Frodo Baggins and of the War of the Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set, published to mark the 80th anniversary of the publication of The Hobbit, offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
         "googleBookId": "XuO0tAEACAAJ",
         "isbn13": "0008260184",
-        "pageCount": 912
+        "pgCount": 912
       }
     ]
   }
@@ -1057,7 +1065,7 @@ query{
     bookCover
     author
     isbn13
-	pageCount
+	pgCount
     description
     category
   }
@@ -1076,7 +1084,7 @@ query{
                 "bookCover": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
                 "author": "Brandon Sanderson",
                 "isbn13": "9781429952040",
-                "pageCount": 1374,
+                "pgCount": 1374,
                 "description": "An instant #1 New York Times Bestseller and a USA Today and Indie Bestseller! The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson's #1 New York Times bestselling Oathbringer, from an epic fantasy writer at the top of his game. After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
                 "category": "Fiction"
             },
@@ -1086,7 +1094,7 @@ query{
                 "bookCover": "http://books.google.com/books/content?id=QcpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
                 "author": "Джек Лондон",
                 "isbn13": "9785040938896",
-                "pageCount": 241,
+                "pgCount": 241,
                 "description": "Безкраї та суворі північні краї накладають відбиток на життя людей і тварин. Їх непереборна сила здатна зламати будь-кого, і тільки наймужніші та найвитриваліші здатні цю силу здолати. Саме таким і був головний герой повісті Джека Лондона – ні, не людина, а вовк на ймення Біле Ікло, що відмінно засвоїв науку виживати в будь-яких несприятливих умовах.Письменник в деталях описує психологію, мотиви поведінки і вчинки Білого Ікла, показує, як доброта і ласка по відношенню до живої істоти вчить його платити любов'ю за любов. А для розумного прирученого вовка любов була дорожча за життя.Ілюстрації Валерії Гогіної.",
                 "category": "Juvenile Fiction"
             },
@@ -1096,7 +1104,7 @@ query{
                 "bookCover": "http://books.google.com/books/content?id=qCpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
                 "author": "W.M. Snellen",
                 "isbn13": "9789036819398",
-                "pageCount": 319,
+                "pgCount": 319,
                 "description": "Dit boek helpt klinische professionals om het uiterste uit hun psychodiagnostische onderzoeksmateriaal te halen. Het leert ze om de resultaten van persoonlijkheidsdiagnostiek optimaal te integreren en te interpreteren. Daarbij geeft het boek antwoord op vragen als: welke betekenis moet je toekennen aan psychische klachten en symptomen? En hoe kun je de resultaten van persoonlijkheidsdiagnostiek in een individuele context plaatsen? Zo krijgt de psychodiagnosticus een helder beeld van de veerkracht én de kwetsbaarheid van de cliënt. In Persoonlijkheidsdiagnostiek in de klinische praktijk wordt persoonlijkheidsonderzoek bij cliënten met psychopathologie voor het eerst behandeld uit het perspectief van de psychodiagnosticus zelf. De theoriegestuurde methodische visie en werkwijze worden in dit nieuwe standaardwerk geïllustreerd met casuïstiek, waarbij er ook aandacht is voor de belangrijkste valkuilen. De beslisbomen en stappenplannen ondersteunen de lezer bij zijn dagelijkse diagnostische werkzaamheden. Het boek is bestemd voor professionals werkzaam in de GGZ, zoals gz-psychologen, psychotherapeuten, klinisch psychologen, psychiaters en zij die daartoe in opleiding zijn. Wim Snellen is expert op het gebied van de persoonlijkheidsdiagnostiek. Hij werkte ruim veertig jaar als klinisch psycholoog in de psychiatrie en heeft uitgebreide ervaring met het geven van cursussen, supervisie en onderwijs in dit vakgebied.",
                 "category": "Psychology"
             }
