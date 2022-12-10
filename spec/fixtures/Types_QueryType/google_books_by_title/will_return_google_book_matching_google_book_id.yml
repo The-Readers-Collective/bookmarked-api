@@ -338,4 +338,1002 @@ http_interactions:
           ]
         }
   recorded_at: Fri, 09 Dec 2022 21:31:08 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=QCPBDwAAQBAJ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 10 Dec 2022 19:05:30 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 10,
+          "items": [
+            {
+              "kind": "books#volume",
+              "id": "QCPBDwAAQBAJ",
+              "etag": "STusUzPLfYY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War",
+                "subtitle": "Book Four of The Stormlight Archive",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2020-11-17",
+                "description": "An instant #1 New York Times Bestseller and a USA Today and Indie Bestseller! The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson's #1 New York Times bestselling Oathbringer, from an epic fantasy writer at the top of his game. After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781429952040"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1429952040"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 1374,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 11,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.14.11.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=QCPBDwAAQBAJ&printsec=frontcover&dq=QCPBDwAAQBAJ&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 15.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 15.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ&rdid=book-QCPBDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 15990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 15990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=QCPBDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "QcpBDwAAQBAJ",
+              "etag": "Pf+Hg+/YjSY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/QcpBDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Біле Ікло (з ілюстраціями)",
+                "authors": [
+                  "Джек Лондон"
+                ],
+                "publisher": "Litres",
+                "publishedDate": "2022-01-29",
+                "description": "Безкраї та суворі північні краї накладають відбиток на життя людей і тварин. Їх непереборна сила здатна зламати будь-кого, і тільки наймужніші та найвитриваліші здатні цю силу здолати. Саме таким і був головний герой повісті Джека Лондона – ні, не людина, а вовк на ймення Біле Ікло, що відмінно засвоїв науку виживати в будь-яких несприятливих умовах.Письменник в деталях описує психологію, мотиви поведінки і вчинки Білого Ікла, показує, як доброта і ласка по відношенню до живої істоти вчить його платити любов'ю за любов. А для розумного прирученого вовка любов була дорожча за життя.Ілюстрації Валерії Гогіної.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9785040938896"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "5040938896"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": true
+                },
+                "pageCount": 241,
+                "printType": "BOOK",
+                "categories": [
+                  "Juvenile Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.2.0.preview.3",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=QcpBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=QcpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "uk",
+                "previewLink": "http://books.google.com/books?id=QcpBDwAAQBAJ&printsec=frontcover&dq=QCPBDwAAQBAJ&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=QcpBDwAAQBAJ&dq=QCPBDwAAQBAJ&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/%D0%91%D1%96%D0%BB%D0%B5_%D0%86%D0%BA%D0%BB%D0%BE_%D0%B7_%D1%96%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D1%96.html?hl=&id=QcpBDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/%D0%91%D1%96%D0%BB%D0%B5_%D0%86%D0%BA%D0%BB%D0%BE_%D0%B7_%D1%96%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D1%96-sample-epub.acsm?id=QcpBDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/%D0%91%D1%96%D0%BB%D0%B5_%D0%86%D0%BA%D0%BB%D0%BE_%D0%B7_%D1%96%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D1%96-sample-pdf.acsm?id=QcpBDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=QcpBDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Безкраї та суворі північні краї накладають відбиток на життя людей і тварин. Їх непереборна сила здатна зламати будь-кого, і тільки ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "iJgQDgAAQBAJ",
+              "etag": "JGD2mvXBQMA",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/iJgQDgAAQBAJ",
+              "volumeInfo": {
+                "title": "Alcatraz vs. The Evil Librarians Series",
+                "subtitle": "(Alcatraz vs. The Evil Librarians, The Scrivener's Bones, The Knights of Crystallia, The Shattered Lens, The Dark Talent)",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2017-02-28",
+                "description": "This discounted ebundle includes: Alcatraz vs. The Evil Librarians, The Scrivener's Bones, The Knights of Crystallia, The Shattered Lens, The Dark Talent An action-packed fantasy adventure series by the #1 New York Times bestselling author Brandon Sanderson. Alcatraz Smedry and his family and friends must battle a cult of evil Librarians bent on taking over the world through misinformation and suppressing the truth. Alcatraz vs. the Evil Librarians — On his thirteenth birthday, foster child Alcatraz Smedry gets a bag of sand in the mail-his only inheritance from his father and mother. It is quickly stolen by the cult of Evil Librarians. Alcatraz must stop them, using the only weapon he has: an incredible talent for breaking things. The Scriveners Bones — In his second skirmish against the Evil Librarians who rule the world, Alcatraz and his ragtag crew of freedom fighters track Grandpa Smedry to the ancient and mysterious Library of Alexandria. Can Alcatraz and his friends rescue Grandpa Smedry and make it out of there alive? The Knights of Crystallia — Alcatraz Smedry has made it to the Free Kingdoms at last. Unfortunately, so have the Evil Librarians—including his mother! Now Alcatraz has to find a traitor among the Knights of Crystallia, make up with his estranged father, and save one of the last bastions of the Free Kingdoms from the Evil Librarians. The Shattered Lens — Alcatraz Smedry is up against a whole army of Evil Librarians with only his friend Bastille, a few pairs of glasses, and an unlimited supply of exploding teddy bears to help him. This time, even Alcatraz's extraordinary talent for breaking things may not be enough to defeat the army of Evil Librarians and their giant librarian robots. The Dark Talent — Alcatraz Smedry has successfully defeated the army of Evil Librarians and saved the kingdom of Mokia. Too bad he managed to break the Smedry Talents in the process. Even worse, his father is trying to enact a scheme that could ruin the world, and his friend, Bastille, is in a coma. Without his Talent to draw upon, can Alcatraz figure out a way to save Bastille and defeat the Evil Librarians once and for all? At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780765397447"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0765397447"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 1408,
+                "printType": "BOOK",
+                "categories": [
+                  "Juvenile Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.6.6.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=iJgQDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=iJgQDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=iJgQDgAAQBAJ&pg=PP1&dq=QCPBDwAAQBAJ&hl=&cd=3&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=iJgQDgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=iJgQDgAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 39.16,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 39.16,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=iJgQDgAAQBAJ&rdid=book-iJgQDgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 39160000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 39160000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=iJgQDgAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "qCpBDwAAQBAJ",
+              "etag": "vABfF5o3oD0",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/qCpBDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Persoonlijkheidsdiagnostiek in de klinische praktijk",
+                "authors": [
+                  "W.M. Snellen"
+                ],
+                "publisher": "Springer",
+                "publishedDate": "2017-12-02",
+                "description": "Dit boek helpt klinische professionals om het uiterste uit hun psychodiagnostische onderzoeksmateriaal te halen. Het leert ze om de resultaten van persoonlijkheidsdiagnostiek optimaal te integreren en te interpreteren. Daarbij geeft het boek antwoord op vragen als: welke betekenis moet je toekennen aan psychische klachten en symptomen? En hoe kun je de resultaten van persoonlijkheidsdiagnostiek in een individuele context plaatsen? Zo krijgt de psychodiagnosticus een helder beeld van de veerkracht én de kwetsbaarheid van de cliënt. In Persoonlijkheidsdiagnostiek in de klinische praktijk wordt persoonlijkheidsonderzoek bij cliënten met psychopathologie voor het eerst behandeld uit het perspectief van de psychodiagnosticus zelf. De theoriegestuurde methodische visie en werkwijze worden in dit nieuwe standaardwerk geïllustreerd met casuïstiek, waarbij er ook aandacht is voor de belangrijkste valkuilen. De beslisbomen en stappenplannen ondersteunen de lezer bij zijn dagelijkse diagnostische werkzaamheden. Het boek is bestemd voor professionals werkzaam in de GGZ, zoals gz-psychologen, psychotherapeuten, klinisch psychologen, psychiaters en zij die daartoe in opleiding zijn. Wim Snellen is expert op het gebied van de persoonlijkheidsdiagnostiek. Hij werkte ruim veertig jaar als klinisch psycholoog in de psychiatrie en heeft uitgebreide ervaring met het geven van cursussen, supervisie en onderwijs in dit vakgebied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9789036819398"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "9036819393"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": true
+                },
+                "pageCount": 319,
+                "printType": "BOOK",
+                "categories": [
+                  "Psychology"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.0.1.0.preview.3",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=qCpBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=qCpBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "nl",
+                "previewLink": "http://books.google.com/books?id=qCpBDwAAQBAJ&printsec=frontcover&dq=QCPBDwAAQBAJ&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=qCpBDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=qCpBDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE_AND_RENTAL",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 49.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 39.49,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=qCpBDwAAQBAJ&rdid=book-qCpBDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 49990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 39490000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  },
+                  {
+                    "finskyOfferType": 3,
+                    "listPrice": {
+                      "amountInMicros": 17500000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 15220000,
+                      "currencyCode": "USD"
+                    },
+                    "rentalDuration": {
+                      "unit": "DAY",
+                      "count": 90
+                    }
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Persoonlijkheidsdiagnostiek_in_de_klinis-sample-epub.acsm?id=qCpBDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Persoonlijkheidsdiagnostiek_in_de_klinis-sample-pdf.acsm?id=qCpBDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=qCpBDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "In Persoonlijkheidsdiagnostiek in de klinische praktijk wordt persoonlijkheidsonderzoek bij cliënten met psychopathologie voor het eerst behandeld uit het perspectief van de psychodiagnosticus zelf."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "DGS8DwAAQBAJ",
+              "etag": "6n//8bSsaHY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/DGS8DwAAQBAJ",
+              "volumeInfo": {
+                "title": "The Fires of Vengeance",
+                "authors": [
+                  "Evan Winter"
+                ],
+                "publisher": "Orbit",
+                "publishedDate": "2020-11-10",
+                "description": "In this \"relentlessly gripping, brilliant\" epic fantasy (James Islington), an ousted queen must join forces with a young warrior in order to reclaim her throne and save her people. Tau and his Queen, desperate to delay the impending attack on the capital by the indigenous people of Xidda, craft a dangerous plan. If Tau succeeds, the Queen will have the time she needs to assemble her forces and launch an all out assault on her own capital city, where her sister is being propped up as the 'true' Queen of the Omehi. If the city can be taken, if Tsiora can reclaim her throne, and if she can reunite her people then the Omehi have a chance to survive the onslaught. \"This gritty series set in a South African–inspired fantasy world is an intense reading experience, and the second book is just as phenomenal as the first.\"—BuzzFeed News \"The Fires of Vengeance is epic fantasy at its finest.\"—Winter Is Coming The Books of The Burning Series The Rage of Dragons The Fires of Vengeance The Lord of Demons",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780316489812"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0316489816"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 477,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.2.3.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=DGS8DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=DGS8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=DGS8DwAAQBAJ&pg=PP1&dq=QCPBDwAAQBAJ&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=DGS8DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=DGS8DwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=DGS8DwAAQBAJ&rdid=book-DGS8DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 9990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 9990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Fires_of_Vengeance-sample-epub.acsm?id=DGS8DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=DGS8DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;This gritty series set in a South African–inspired fantasy world is an intense reading experience, and the second book is just as phenomenal as the first.&quot;—BuzzFeed News &quot;The Fires of Vengeance is epic fantasy at its finest.&quot;—Winter ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "mwpNDwAAQBAJ",
+              "etag": "qdL2KMfzSho",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/mwpNDwAAQBAJ",
+              "volumeInfo": {
+                "title": "The Stormlight Archive, Books 1-3",
+                "subtitle": "The Way of Kings, Words of Radiance, Oathbringer",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2018-05-08",
+                "description": "This Stormlight Archive discounted ebundle includes: The Way of Kings, Words of Radiance, Oathbringer The #1 New York Times bestselling epic fantasy series by Brandon Sanderson! The Stormlight Archive is the wildly imaginative epic fantasy from New York Times bestselling author Brandon Sanderson: welcome to the remarkable world of Roshar, a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Roshar is shared by humans and the enigmatic, humanoid Parshendi, with whom they are at war. It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain. Men trade kingdoms for Shardblades. Wars were fought for them, and won by them, but in the war against the Parshendi, the ancient weapons and armor may not be enough. Speak again the ancient oaths: Life before death. Strength before weakness. Journey before Destination. and return to men the Shards they once bore. The Knights Radiant must stand again. --- Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250305411"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1250305411"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 3570,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.4.5.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=mwpNDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=mwpNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=mwpNDwAAQBAJ&pg=PP1&dq=QCPBDwAAQBAJ&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=mwpNDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=mwpNDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 25.58,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 25.58,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=mwpNDwAAQBAJ&rdid=book-mwpNDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 25580000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 25580000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=mwpNDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "--- Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "745CEAAAQBAJ",
+              "etag": "iu3CiuXpW+w",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/745CEAAAQBAJ",
+              "volumeInfo": {
+                "title": "Evershore (Skyward Flight: Novella 3)",
+                "authors": [
+                  "Brandon Sanderson",
+                  "Janci Patterson"
+                ],
+                "publisher": "Delacorte Press",
+                "publishedDate": "2021-12-28",
+                "description": "From #1 bestselling author Brandon Sanderson and Janci Patterson comes the final of three Skyward series novellas, each told from the perspective of a different member of the team back on Detritus. Listen to Jorgen's story along with Cytonic. With the government of Detritus in disarray because of Superiority treachery, and with Spensa still away on her mission in the Nowhere, Jorgen must work together with the alien Alanik to pick up the pieces. They intercept a strange transmission from the planet Evershore and its Kitsen inhabitants, who say they have some of Jorgen’s people and want to return them—but can the Kitsen be trusted? And can Jorgen learn to master his increasingly erratic cytonic powers before they spiral out of control and destroy all hope of forming an alliance against the Superiority? Praise for Skyward An Instant New York Times Bestseller A Kirkus Reviews Best Book of the Year • \"Startling revelations and stakes-raising implications . . . Sanderson plainly had a ball with this nonstop, highflying opener, and readers will too.\" —Kirkus Reviews, starred review • \"With this action-packed trilogy opener, Sanderson offers up a resourceful, fearless heroine and a memorable cast.\" —Publishers Weekly, starred review • \"It is impossible to turn the pages fast enough.\" —Booklist",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780593566633"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0593566637"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                  "Young Adult Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.1.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=745CEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=745CEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=745CEAAAQBAJ&printsec=frontcover&dq=QCPBDwAAQBAJ&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=745CEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=745CEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 4.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 4.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=745CEAAAQBAJ&rdid=book-745CEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 4990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 4990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Evershore_Skyward_Flight_Novella_3-sample-epub.acsm?id=745CEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=745CEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "From #1 bestselling author Brandon Sanderson and Janci Patterson comes the final of three Skyward series novellas, each told from the perspective of a different member of the team back on Detritus."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "QzJ9DwAAQBAJ",
+              "etag": "PdDOv51o+Ec",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/QzJ9DwAAQBAJ",
+              "volumeInfo": {
+                "title": "The Rage of Dragons",
+                "authors": [
+                  "Evan Winter"
+                ],
+                "publisher": "Orbit",
+                "publishedDate": "2019-02-12",
+                "description": "Game of Thrones meets Gladiator in this blockbuster debut epic fantasy about a world caught in an eternal war, and the young man who will become his people's only hope for survival. ONE OF TIME MAGAZINE'S TOP 100 FANTASY BOOKS OF ALL TIME Winner of the Reddit/Fantasy Award for Best Debut Fantasy Novel The Omehi people have been fighting an unwinnable war for almost two hundred years. The lucky ones are born gifted. One in every two thousand women has the power to call down dragons. One in every hundred men is able to magically transform himself into a bigger, stronger, faster killing machine. Everyone else is fodder, destined to fight and die in the endless war. Young, gift-less Tau knows all this, but he has a plan of escape. He's going to get himself injured, get out early, and settle down to marriage, children, and land. Only, he doesn't get the chance. Those closest to him are brutally murdered, and his grief swiftly turns to anger. Fixated on revenge, Tau dedicates himself to an unthinkable path. He'll become the greatest swordsman to ever live, a man willing to die a hundred thousand times for the chance to kill the three who betrayed him. The Rage of Dragons launches a stunning and powerful debut epic fantasy series that readers are already calling \"the best fantasy book in years.\" The BurningThe Rage of Dragons",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780316489744"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0316489743"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 544,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 9,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.8.9.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=QzJ9DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=QzJ9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=QzJ9DwAAQBAJ&pg=PP1&dq=QCPBDwAAQBAJ&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=QzJ9DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QzJ9DwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=QzJ9DwAAQBAJ&rdid=book-QzJ9DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 9990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 9990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Rage_of_Dragons-sample-epub.acsm?id=QzJ9DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=QzJ9DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The Rage of Dragons launches a stunning and powerful debut epic fantasy series that readers are already calling &quot;the best fantasy book in years.&quot; The BurningThe Rage of Dragons"
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "yo5CEAAAQBAJ",
+              "etag": "hyfFuU8UT+8",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/yo5CEAAAQBAJ",
+              "volumeInfo": {
+                "title": "ReDawn (Skyward Flight: Novella 2)",
+                "authors": [
+                  "Brandon Sanderson",
+                  "Janci Patterson"
+                ],
+                "publisher": "Delacorte Press",
+                "publishedDate": "2021-10-26",
+                "description": "From #1 bestselling author Brandon Sanderson and Janci Patterson comes the second of three Skyward series novellas, each told from the perspective of a different member of the team back on Detritus. Read Alanik's story between Starsight and Cytonic. “Don’t trust their lies. Don’t trust their false peace.” That is the warning that Alanik of the planet ReDawn gave the human pilot Spensa after Alanik’s ship crash-landed on Detritus. While accepting an invitation to meet with her people’s enemy, the Galactic Superiority, Alanik heard Spensa’s cry for help across the vastness of space, and she used her cytonic powers to hyperjump her ship to the source of that cry. What she found there was a shock—a whole planet of free humans fighting against the Superiority. Were they the allies her people desperately needed? When she recovered from her injuries and met the friendly humans Jorgen and FM of Skyward Flight, she found that her warning to Spensa had gone unheeded by the government of Detritus, and they were considering a peace overture from the Superiority. Now having returned to ReDawn, Alanik is dismayed to learn that her own people are falling into the exact same trap. The faction in ReDawn’s government that wants to appease the Superiority has gained the upper hand. With Alanik’s mentor, Renakin captured, she has no one to turn to but Jorgen, FM, and their friend Rig. An ancient technology may have the power to save both of their planets from disaster, but can they discover its secrets before it’s too late? Praise for Skyward An Instant New York Times Bestseller A Kirkus Reviews Best Book of the Year • \"Startling revelations and stakes-raising implications . . . Sanderson plainly had a ball with this nonstop, highflying opener, and readers will too.\" —Kirkus Reviews, starred review • \"With this action-packed trilogy opener, Sanderson offers up a resourceful, fearless heroine and a memorable cast.\" —Publishers Weekly, starred review • \"It is impossible to turn the pages fast enough.\" —Booklist",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780593566626"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0593566629"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                  "Young Adult Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.2.2.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=yo5CEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=yo5CEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=yo5CEAAAQBAJ&printsec=frontcover&dq=QCPBDwAAQBAJ&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=yo5CEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yo5CEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 4.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 4.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=yo5CEAAAQBAJ&rdid=book-yo5CEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 4990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 4990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/ReDawn_Skyward_Flight_Novella_2-sample-epub.acsm?id=yo5CEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=yo5CEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "From #1 bestselling author Brandon Sanderson and Janci Patterson comes the second of three Skyward series novellas, each told from the perspective of a different member of the team back on Detritus."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "JlO_zgEACAAJ",
+              "etag": "s1kiUVYIaSc",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/JlO_zgEACAAJ",
+              "volumeInfo": {
+                "title": "Skyward Flight: The Collection",
+                "subtitle": "Sunreach, ReDawn, Evershore",
+                "authors": [
+                  "Brandon Sanderson",
+                  "Janci Patterson"
+                ],
+                "publisher": "Delacorte Press",
+                "publishedDate": "2022-04-05",
+                "description": "Return to the planet Detritus with FM, Alanik, and Jorgen in this must-have three-novella collection featuring exclusive character art and deleted scenes from Skyward with commentary from Brandon Sanderson. Journey with Skyward Flight to Detritus—humanity’s final refuge from the hostile Galactic Superiority government. In Skyward, Spensa Nightshade became a starfighter pilot in the Defiant Defense Force’s Skyward Flight to battle Superiority forces. In Starsight she impersonated the alien Alanik to infiltrate a Superiority space station and steal their hyperdrives. And in Cytonic she traveled the strange dimension of the Nowhere to discover the secrets of the planet-destroying Delvers and unlock her own Cytonic powers. As she is stuck in the Nowhere, Spensa’s companions FM and Jorgen in Skyward Flight are left on Detritus with a new mandate: figure out how to use the hyperdrives so that humanity can escape the planet and find allies among other species oppressed by the Superiority. First comes a distress call from Minister Cuna and other diones on the abandoned outpost of Sunreach. Alanik’s people on the planet ReDawn and the Kitsen from the planet Evershore also need Skyward Flight’s aid in their desperate battles. The tales of FM, Alanik, and Jorgen combine to expand the universe of the New York Times bestselling Skyward series to new action-packed heights. Once you’ve claimed the stars, can you keep them free?",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780593567852"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0593567854"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 641,
+                "printType": "BOOK",
+                "categories": [
+                  "Young Adult Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.0.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=JlO_zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=JlO_zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=JlO_zgEACAAJ&dq=QCPBDwAAQBAJ&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=JlO_zgEACAAJ&dq=QCPBDwAAQBAJ&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Skyward_Flight_The_Collection.html?hl=&id=JlO_zgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=JlO_zgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The tales of FM, Alanik, and Jorgen combine to expand the universe of the New York Times bestselling Skyward series to new action-packed heights. Once you&#39;ve claimed the stars, can you keep them free?"
+              }
+            }
+          ]
+        }
+  recorded_at: Sat, 10 Dec 2022 19:05:29 GMT
 recorded_with: VCR 6.1.0
