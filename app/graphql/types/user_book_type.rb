@@ -5,7 +5,7 @@ module Types
     field :id, ID, null: false
     field :user_id, ID
     field :book_id, ID
-    field :status, Integer
+    field :status, StatusType
     # field :books, [Types::BookType]
     field :book, Types::BookType
 

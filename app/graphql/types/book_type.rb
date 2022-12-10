@@ -9,7 +9,7 @@ module Types
     field :isbn_13, String
     field :pg_count, Integer
     field :description, String
-    field :condition, String
+    field :condition, ConditionType
     field :category, String
     field :book_cover, String
     field :available, Boolean
