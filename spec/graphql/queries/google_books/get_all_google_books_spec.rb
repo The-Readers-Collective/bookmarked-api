@@ -8,7 +8,7 @@ RSpec.describe Types::QueryType do
       expect(result["data"]["googleBooks"][0]["googleBookId"]).to eq("QCPBDwAAQBAJ")
       expect(result["data"]["googleBooks"][0]["author"]).to eq("Brandon Sanderson")
       expect(result["data"]["googleBooks"][0]["isbn13"]).to eq("9781429952040")
-      expect(result["data"]["googleBooks"][0]["pageCount"]).to eq(1374)
+      expect(result["data"]["googleBooks"][0]["pgCount"]).to eq(1374)
       expect(result["data"]["googleBooks"][0]["description"]).to include("An instant #1 New York Times Bestseller")
       
     end
@@ -22,7 +22,7 @@ RSpec.describe Types::QueryType do
           author
           bookTitle
           bookCover
-          pageCount
+          pgCount
           description
           category
         }
