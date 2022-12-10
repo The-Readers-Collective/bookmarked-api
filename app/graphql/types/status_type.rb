@@ -2,7 +2,7 @@
 
 module Types
   class StatusType < Types::BaseEnum
-    value 'OWNED', "Books owned by user"
-    value 'BOOKMARKED', "Books bookmarked by user"
+    value 'OWNED', "description", value: 0 
+    value 'BOOKMARKED', "description", value: 1 
   end
 end
