@@ -807,4 +807,889 @@ http_interactions:
           ]
         }
   recorded_at: Fri, 09 Dec 2022 21:50:41 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=Rhythm%20of%20War
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 10 Dec 2022 19:05:30 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 1843,
+          "items": [
+            {
+              "kind": "books#volume",
+              "id": "QCPBDwAAQBAJ",
+              "etag": "hItaa05/f00",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/QCPBDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War",
+                "subtitle": "Book Four of The Stormlight Archive",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2020-11-17",
+                "description": "An instant #1 New York Times Bestseller and a USA Today and Indie Bestseller! The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson's #1 New York Times bestselling Oathbringer, from an epic fantasy writer at the top of his game. After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781429952040"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1429952040"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 1374,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 11,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.14.11.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=QCPBDwAAQBAJ&printsec=frontcover&dq=Rhythm+of+War&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 15.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 15.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=QCPBDwAAQBAJ&rdid=book-QCPBDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 15990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 15990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=QCPBDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "481EEAAAQBAJ",
+              "etag": "mtbdQtyPNa4",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/481EEAAAQBAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War",
+                "subtitle": "Book Four of The Stormlight Archive",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Fantasy",
+                "publishedDate": "2022-06-28",
+                "description": "The fourth book in the stormlight Archive series, Rhythm of War, marks the eagerly awaited sequel to the #1 New York Times bestselling Oathbringer, from epic fantasy writer Brandon Sanderson. After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780765365309"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0765365308"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 0,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=481EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=481EEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=481EEAAAQBAJ&dq=Rhythm+of+War&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=481EEAAAQBAJ&dq=Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War.html?hl=&id=481EEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=481EEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The fourth book in the stormlight Archive series, Rhythm of War, marks the eagerly awaited sequel to the #1 New York Times bestselling Oathbringer, from epic fantasy writer Brandon Sanderson."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "N093zgEACAAJ",
+              "etag": "ihFilBvwJXc",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/N093zgEACAAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War Part Two",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Gollancz",
+                "publishedDate": "2022-04-28",
+                "description": "After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar's crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin's scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition's envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. The story will continue . . . Other books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0575093420"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780575093423"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 752,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=N093zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=N093zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=N093zgEACAAJ&dq=Rhythm+of+War&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=N093zgEACAAJ&dq=Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War_Part_Two.html?hl=&id=N093zgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=N093zgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Brandon Sanderson&#39;s The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "PTBQEAAAQBAJ",
+              "etag": "dF5npuBYUns",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/PTBQEAAAQBAJ",
+              "volumeInfo": {
+                "title": "The Lost Metal",
+                "subtitle": "A Mistborn Novel",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2022-11-15",
+                "description": "Return to #1 New York Times bestseller Brandon Sanderson’s Mistborn world of Scadrial as its second era, which began with The Alloy of Law, comes to its earth-shattering conclusion in The Lost Metal. For years, frontier lawman turned big-city senator Waxillium Ladrian has hunted the shadowy organization the Set—with his late uncle and his sister among their leaders—since they started kidnapping people with the power of Allomancy in their bloodlines. When Detective Marasi Colms and her partner Wayne find stockpiled weapons bound for the Outer City of Bilming, this opens a new lead. Conflict between Elendel and the Outer Cities only favors the Set, and their tendrils now reach to the Elendel Senate—whose corruption Wax and Steris have sought to expose—and Bilming is even more entangled. After Wax discovers a new type of explosive that can unleash unprecedented destruction and realizes that the Set must already have it, an immortal kandra serving Scadrial’s god, Harmony, reveals that Bilming has fallen under the influence of another god: Trell, worshipped by the Set. And Trell isn’t the only factor at play from the larger Cosmere—Marasi is recruited by offworlders with strange abilities who claim their goal is to protect Scadrial...at any cost. Wax must choose whether to set aside his rocky relationship with God and once again become the Sword that Harmony has groomed him to be. If no one steps forward to be the hero Scadrial needs, the planet and its millions of people will come to a sudden and calamitous ruin. Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Dawnshard (Novella) Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning The Lost Metal Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker The Alcatraz vs. the Evil Librarians series Alcatraz vs. the Evil Librarians The Scrivener's Bones The Knights of Crystallia The Shattered Lens The Dark Talent The Rithmatist series The Rithmatist Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780765391209"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0765391201"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 541,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.6.5.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=PTBQEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=PTBQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=PTBQEAAAQBAJ&printsec=frontcover&dq=Rhythm+of+War&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=PTBQEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=PTBQEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=PTBQEAAAQBAJ&rdid=book-PTBQEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=PTBQEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Other Tor books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer Dawnshard (Novella) Rhythm of War The Mistborn trilogy Mistborn: The Final Empire The Well of ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "90nDzQEACAAJ",
+              "etag": "td1PD1HufXY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/90nDzQEACAAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War SIGNED EDITION",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publishedDate": "2020-11-17",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "125079367X"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250793676"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 1232,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=90nDzQEACAAJ&dq=Rhythm+of+War&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=90nDzQEACAAJ&dq=Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War_SIGNED_EDITION.html?hl=&id=90nDzQEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=90nDzQEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson&#39;s #1 New York Times bestselling Oathbringer , from an epic fantasy writer at the top of his game.After forming a coalition of human ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "7mVUEAAAQBAJ",
+              "etag": "OzlkPYuHxy8",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/7mVUEAAAQBAJ",
+              "volumeInfo": {
+                "title": "Leech",
+                "authors": [
+                  "Hiron Ennes"
+                ],
+                "publisher": "Tordotcom",
+                "publishedDate": "2022-09-27",
+                "description": "A surreal and horrifying debut, Hiron Ennes's Leech defies our understanding of identity, heredity, and bodily autonomy. An Amazon Book of the Month! “A wonderful new entry to Gothic science fiction, impeccably clever and atmospheric. Think Wuthering Heights... with worms!”—Tamsyn Muir MEET THE CURE FOR THE HUMAN DISEASE In an isolated chateau, as far north as north goes, the baron’s doctor has died. The doctor’s replacement has a mystery to solve: discovering how the Institute lost track of one of its many bodies. For hundreds of years the Interprovincial Medical Institute has grown by taking root in young minds and shaping them into doctors, replacing every human practitioner of medicine. The Institute is here to help humanity, to cure and to cut, to cradle and protect the species from the apocalyptic horrors their ancestors unleashed. In the frozen north, the Institute's body will discover a competitor for its rung at the top of the evolutionary ladder. A parasite is spreading through the baron's castle, already a dark pit of secrets, lies, violence, and fear. The two will make war on the battlefield of the body. Whichever wins, humanity will lose again. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250811196"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1250811198"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 230,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 3,
+                "ratingsCount": 2,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.2.2.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=7mVUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=7mVUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=7mVUEAAAQBAJ&printsec=frontcover&dq=Rhythm+of+War&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=7mVUEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7mVUEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=7mVUEAAAQBAJ&rdid=book-7mVUEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=7mVUEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": ". . I will follow this writer anywhere going forward.&quot; —Gillian Flynn, New York Times bestselling author of Gone Girl A surreal and horrifying debut, Hiron Ennes&#39;s Leech defies our understanding of identity, heredity, and bodily autonomy."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "NNt9zgEACAAJ",
+              "etag": "/SlWWZwlzFo",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/NNt9zgEACAAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War Part One",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Gollancz",
+                "publishedDate": "2021-10",
+                "description": "After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar's crafty ally Taravangian looms over every strategic move. Now, as new technological discoveries by Navani Kholin's scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition's envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. The story continues in Rhythm of War Part Two. Other books by Brandon Sanderson The Cosmere The Stormlight Archive The Way of Kings Words of Radiance Edgedancer (Novella) Oathbringer The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Collection Arcanum Unbounded Other Cosmere novels Elantris Warbreaker Other books by Brandon Sanderson The Reckoners Steelheart Firefight Calamity",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0575093412"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780575093416"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 672,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=NNt9zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=NNt9zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=NNt9zgEACAAJ&dq=Rhythm+of+War&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=NNt9zgEACAAJ&dq=Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War_Part_One.html?hl=&id=NNt9zgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=NNt9zgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Brandon Sanderson&#39;s The Cosmere The Mistborn trilogy Mistborn: The Final Empire The Well of Ascension The Hero of Ages Mistborn: The Wax and Wayne series Alloy of Law Shadows of Self Bands of Mourning Other Cosmere novels Elantris ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "q-przQEACAAJ",
+              "etag": "Q5TaCIDOHCE",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/q-przQEACAAJ",
+              "volumeInfo": {
+                "title": "Rhythm of War",
+                "authors": [
+                  "Brandon Sanderson"
+                ],
+                "publisher": "Tor Books",
+                "publishedDate": "2020-11-04",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1250784263"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250784261"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=q-przQEACAAJ&dq=Rhythm+of+War&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rhythm_of_War.html?hl=&id=q-przQEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=q-przQEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "E649EAAAQBAJ",
+              "etag": "KiY0AtJWhbc",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/E649EAAAQBAJ",
+              "volumeInfo": {
+                "title": "The Wilderwomen",
+                "subtitle": "A Novel",
+                "authors": [
+                  "Ruth Emmie Lang"
+                ],
+                "publisher": "St. Martin's Press",
+                "publishedDate": "2022-11-15",
+                "description": "\"Exquisitely drawn characters imbue Lang’s unconventional plot with verisimilitude and heart, inspiring readers to ponder whether the world is stranger and more beautiful than it appears. Effervescent, ethereal, and suffused with wonder.\" — Kirkus (starred review) \"Lang’s melancholy, atmospheric writing sets the perfect tone as the Wilder sisters unravel the mystery. The result is a cozy supernatural outing perfect for an autumn night.\" —Publisher's Weekly Ohioana Book Award finalist Ruth Emmie Lang returns with a new cast of ordinary characters with extraordinary abilities in The Wilderwomen. Five years ago, Nora Wilder disappeared. The older of her two daughters, Zadie, should have seen it coming, because she can literally see things coming. But not even her psychic abilities were able to prevent their mother from vanishing one morning. Zadie’s estranged younger sister, Finn, can’t see into the future, but she has an uncannily good memory, so good that she remembers not only her own memories, but the echoes of memories other people have left behind. On the afternoon of her graduation party, Finn is seized by an “echo” more powerful than anything she’s experienced before: a woman singing a song she recognizes, a song about a bird... When Finn wakes up alone in an aviary with no idea of how she got there, she realizes who the memory belongs to: Nora. Now, it’s up to Finn to convince her sister that not only is their mom still out there, but that she wants to be found. Against Zadie’s better judgement, she and Finn hit the highway, using Finn’s echoes to retrace Nora’s footsteps and uncover the answer to the question that has been haunting them for years: Why did she leave? But the more time Finn spends in their mother’s past, the harder it is for her to return to the present, to return to herself. As Zadie feels her sister start to slip away, she will have to decide what lengths she is willing to go to find their mother, knowing that if she chooses wrong, she could lose them both for good.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250246929"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "125024692X"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 266,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 2,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.1.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=E649EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=E649EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=E649EAAAQBAJ&printsec=frontcover&dq=Rhythm+of+War&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=E649EAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=E649EAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=E649EAAAQBAJ&rdid=book-E649EAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Wilderwomen-sample-epub.acsm?id=E649EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=E649EAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The result is a cozy supernatural outing perfect for an autumn night.&quot; —Publisher&#39;s Weekly Ohioana Book Award finalist Ruth Emmie Lang returns with a new cast of ordinary characters with extraordinary abilities in The Wilderwomen."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "Ulk8EAAAQBAJ",
+              "etag": "EURCVbfLT4g",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/Ulk8EAAAQBAJ",
+              "volumeInfo": {
+                "title": "Seasonal Fears",
+                "authors": [
+                  "Seanan McGuire"
+                ],
+                "publisher": "Tordotcom",
+                "publishedDate": "2022-05-03",
+                "description": "From New York Times bestselling author Seanan McGuire, Seasonal Fears is the extraordinary companion novel to Middlegame. The king of winter and the queen of summer are dead. The fight for their crowns begins! Melanie has a destiny, though it isn’t the one everyone assumes it to be. She’s delicate; she’s fragile; she’s dying. Now, truly, is the winter of her soul. Harry doesn’t want to believe in destiny, because that means accepting the loss of the one person who gives his life meaning, who brings summer to his world. So, when a new road is laid out in front of them—a road that will lead through untold dangers toward a possible lifetime together—walking down it seems to be the only option. But others are following behind, with violence in their hearts. It looks like Destiny has a plan for them, after all.... \"One must maintain a little bit of summer even in the middle of winter.\" —Thoreau At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250768254"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "125076825X"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 544,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.1.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=Ulk8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=Ulk8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=Ulk8EAAAQBAJ&pg=PP1&dq=Rhythm+of+War&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=Ulk8EAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Ulk8EAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=Ulk8EAAAQBAJ&rdid=book-Ulk8EAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 14990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Ulk8EAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "From New York Times bestselling author Seanan McGuire, Seasonal Fears is the extraordinary companion novel to Middlegame."
+              }
+            }
+          ]
+        }
+  recorded_at: Sat, 10 Dec 2022 19:05:30 GMT
 recorded_with: VCR 6.1.0
