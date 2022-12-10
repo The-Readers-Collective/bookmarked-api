@@ -581,7 +581,7 @@ query{
 ```
 
 ### Create a Book
-Lets you create a Book
+Lets you create a Book and by passing in the userId it will also automatically create the UserBook relationship of `OWNED`
 
 <b>Example Query:</b>
 ```json
@@ -597,6 +597,7 @@ mutation{
       category: "Fiction"
       condition: "Excellent"
       available: true
+      userId: 1
     }){
     book {
       id,
