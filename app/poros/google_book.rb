@@ -3,7 +3,7 @@ class GoogleBook
               :book_title,
               :author,
               :isbn_13,
-              :page_count,
+              :pg_count,
               :description,
               :category,
               :book_cover
@@ -13,7 +13,7 @@ class GoogleBook
     @book_title = book_data[:volumeInfo][:title]
     @author = book_data[:volumeInfo][:authors].join(", ")
     @isbn_13 = book_data[:volumeInfo][:industryIdentifiers][0][:identifier]
-    @page_count = book_data[:volumeInfo][:pageCount]
+    @pg_count = book_data[:volumeInfo][:pageCount]
     @description = book_data[:volumeInfo][:description]
     @isbn_13 = book_data[:volumeInfo][:industryIdentifiers][0][:identifier]
     @category = book_data[:volumeInfo][:categories].join(", ") if book_data[:volumeInfo][:categories].present?
