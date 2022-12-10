@@ -3,6 +3,9 @@ require 'rails_helper'
 module Mutations
   module Books
     RSpec.describe CreateBook, type: :request do
+      before :each do 
+        @user_1 = User.create!(name: "Tester 1", zipcode: "80241", email: "test1@gmail.com")
+      end
       describe 'book creation' do
         it 'creates and returns a book' do
           expect(Book.count).to eq(0)
@@ -31,6 +34,7 @@ module Mutations
                 category: "Fiction"
                 condition: "Excellent"
                 available: true
+                userId: #{@user_1.id}
               }){
               book {
                 id,
