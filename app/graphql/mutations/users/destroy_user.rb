@@ -6,9 +6,8 @@ class  Mutations::Users::DestroyUser <  Mutations::BaseMutation
 
   def resolve(id:)
     user = User.find(id)
-    # user_books = UserBook.where(user_id: user.id)
-    
-    # .destroy_all
+        
+    user.books.destroy_all
 
     user.destroy
     {
