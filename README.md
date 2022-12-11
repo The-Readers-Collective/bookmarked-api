@@ -229,7 +229,7 @@ mutation{
 ```
 
 ### View All Users and All Books
-Lets you view all users and all their books
+Lets you view all users, their UserBooks relationship, and all their books
 
 <b>Example Query:</b>
 ```json
@@ -763,6 +763,10 @@ mutation{
 
 ### View Books Owned by User
 Lets you view all books owned by user
+* Availble User query fields: `name`, `zipcode`, `email`
+
+* Availble Book query fields: `available`, `googleBookId`, `bookTitle`, `author`, `pgCount`, `description`, `isbn13`, `condition`, `bookCover`
+
 <b>Example Query:</b>
 ```json
 query {
@@ -806,6 +810,10 @@ query {
 
 ### View Books Bookmarked by User
 Lets you view all books bookmarked by user
+* Availble User query fields: `name`, `zipcode`, `email`
+
+* Availble Book query fields: `available`, `googleBookId`, `bookTitle`, `author`, `pgCount`, `description`, `isbn13`, `condition`, `bookCover`
+
 <b>Example Query:</b>
 ```json
 query {
