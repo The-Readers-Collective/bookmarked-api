@@ -1,5 +1,4 @@
 class Mutations::Books::UpdateBook < Mutations::BaseMutation
-
   argument :attributes, Types::BookAttributes
   argument :id, ID, required: true
 
@@ -9,6 +8,7 @@ class Mutations::Books::UpdateBook < Mutations::BaseMutation
 
   def resolve(id:, attributes:)
     book = Book.find(id)
+    binding.pry
     if book.update(attributes.to_h)
       {
         book: book

@@ -3,7 +3,7 @@ require 'rails_helper'
 module Mutations
   module Books
     RSpec.describe CreateBook, type: :request do
-      before :each do 
+      before :each do
         @user_1 = User.create!(name: "Tester 1", zipcode: "80241", email: "test1@gmail.com")
       end
       describe 'book creation' do
@@ -11,13 +11,13 @@ module Mutations
           expect(Book.count).to eq(0)
           post '/graphql', params: { query: query }
           expect(Book.count).to eq(1)
+          # binding.pry
           json = JSON.parse(response.body)
           data = json['data']["createBook"]
           expect(data['book']['bookTitle']).to eq("A Court of Thorns and Roses")
           expect(data['book']['bookCover']).to eq("http://books.google.com/books/content?id=E-kdBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api")
           expect(data['book']['isbn13']).to eq("9781619634459")
         end
-
       end
 
       def query
@@ -32,7 +32,7 @@ module Mutations
                 bookTitle: "A Court of Thorns and Roses"
                 bookCover: "http://books.google.com/books/content?id=E-kdBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
                 category: "Fiction"
-                condition: "Excellent"
+                condition: 1
                 available: true
                 userId: #{@user_1.id}
               }){

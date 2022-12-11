@@ -9,7 +9,7 @@ module Types
     argument :book_title, String, required: true
     argument :book_cover, String, required: true
     argument :category, String, required: true
-    argument :condition, Integer, required: true
+    argument :condition, ConditionType, required: true
     argument :available, Boolean, required: true
   end
 end

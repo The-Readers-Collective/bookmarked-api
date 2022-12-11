@@ -10,7 +10,5 @@ module Types
 
     field :destroy_user_book, mutation: Mutations::UserBooks::DestroyUserBook
     field :create_user_book, mutation: Mutations::UserBooks::CreateUserBook
-
-
   end
 end
