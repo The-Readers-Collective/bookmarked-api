@@ -8,7 +8,7 @@ class Mutations::UserBooks::CreateUserBook < Mutations::BaseMutation
 
   def resolve(user_id:, book_id:, status:)
     user_book = UserBook.new(user_id: user_id, book_id: book_id, status: status)
-    # binding.pry
+    binding.pry
     if user_book.save
       {
         user_book: user_book,

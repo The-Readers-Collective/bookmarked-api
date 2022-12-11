@@ -11,7 +11,7 @@ module Mutations
           expect(Book.count).to eq(0)
           post '/graphql', params: { query: query }
           expect(Book.count).to eq(1)
-          # binding.pry
+          binding.pry
           json = JSON.parse(response.body)
           data = json['data']["createBook"]
           expect(data['book']['bookTitle']).to eq("A Court of Thorns and Roses")
@@ -32,7 +32,7 @@ module Mutations
                 bookTitle: "A Court of Thorns and Roses"
                 bookCover: "http://books.google.com/books/content?id=E-kdBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
                 category: "Fiction"
-                condition: 1
+                condition: POOR
                 available: true
                 userId: #{@user_1.id}
               }){
