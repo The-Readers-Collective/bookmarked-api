@@ -6,7 +6,7 @@ FactoryBot.define do
     isbn_13 { Faker::Number.number(digits: 10) }
     pg_count { Faker::Number.number(digits: 3) }
     description { Faker::Books::Dune.quote }
-    condition { "Good" }
+    condition { Faker::Number.between(from: 0, to: 2) }
     category { "Adventure" }
     book_cover { Faker::Internet.domain_name }
     available { true }

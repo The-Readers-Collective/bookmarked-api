@@ -32,7 +32,7 @@ module Mutations
                 bookTitle: "A Court of Thorns and Roses"
                 bookCover: "http://books.google.com/books/content?id=E-kdBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
                 category: "Fiction"
-                condition: "Excellent"
+                condition: "EXCELLENT"
                 available: true
                 userId: #{@user_1.id}
               }){

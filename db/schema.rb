@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2022_12_05_230747) do
     t.string "isbn_13"
     t.integer "pg_count"
     t.string "description"
-    t.string "condition"
+    t.integer "condition"
     t.string "category"
     t.string "book_cover"
     t.boolean "available"

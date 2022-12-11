@@ -9,14 +9,12 @@ module Types
     field :isbn_13, String
     field :pg_count, Integer
     field :description, String
-    field :condition, String
+    field :condition, ConditionType
     field :category, String
     field :book_cover, String
     field :available, Boolean
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-
-
 
   end
 end

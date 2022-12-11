@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :isbn_13
       t.integer :pg_count
       t.string :description
-      t.string :condition
+      t.integer :condition
       t.string :category
       t.string :book_cover
       t.boolean :available
