@@ -1,7 +1,7 @@
 class Mutations::UserBooks::CreateUserBook < Mutations::BaseMutation
   argument :user_id, ID, required: true
   argument :book_id, ID, required: true
-  argument :status, Integer, required: true
+  argument :status, String, required: true
 
   field :user_book, Types::UserBookType, null: false
   field :errors, [String], null: false
