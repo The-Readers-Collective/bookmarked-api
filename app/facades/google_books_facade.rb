@@ -1,7 +1,7 @@
 class GoogleBooksFacade
   def self.books_by_name(book_name)
     books = GoogleBooksService.books_by_name(book_name)
-    if books[:items]
+    if books[:items].present?
       books[:items].map do |book_data|
         GoogleBook.new(book_data)
       end
@@ -12,7 +12,7 @@ class GoogleBooksFacade
 
   def self.book_by_google_book_id(google_book_id)
     books = GoogleBooksService.book_by_google_book_id(google_book_id)
-    if books[:items]
+    if books[:items].present?
       GoogleBook.new(books[:items][0])
     else
       []
