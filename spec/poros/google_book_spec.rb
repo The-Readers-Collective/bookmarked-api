@@ -31,10 +31,31 @@ RSpec.describe 'Google Book Poro' do
     end
   end
   context 'Sad Path' do
-    xit 'concatenates an array of categories into one string' do
+    it 'concatenates an array of categories into one string' do
+      response = File.read("spec/fixtures/book_data_sad_path.json")
 
+      books_data = JSON.parse(response, symbolize_names: true)
+      one_book = books_data[:items][0]
+
+      book = GoogleBook.new(one_book)
+
+      expect(book).to be_a GoogleBook
+      expect(book.category).to be_a String
+      expect(book.category).to eq("Fiction, Fantasy")
+      
     end
-    xit 'concatenates an array of authors into one string' do
+    it 'concatenates an array of authors into one string' do
+        response = File.read("spec/fixtures/book_data_sad_path.json")
+
+      books_data = JSON.parse(response, symbolize_names: true)
+      one_book = books_data[:items][0]
+
+      book = GoogleBook.new(one_book)
+
+      expect(book).to be_a GoogleBook
+    
+      expect(book.author).to be_a String
+      expect(book.author).to eq("Brandon Sanderson, Test Author")
       
     end
   end

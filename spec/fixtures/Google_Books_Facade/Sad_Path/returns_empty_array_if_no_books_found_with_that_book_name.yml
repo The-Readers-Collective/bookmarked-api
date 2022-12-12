@@ -1,0 +1,2621 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=Green
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 12 Dec 2022 19:37:59 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 2723,
+          "items": [
+            {
+              "kind": "books#volume",
+              "id": "SKWqDwAAQBAJ",
+              "etag": "NMvFBvAxNNU",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/SKWqDwAAQBAJ",
+              "volumeInfo": {
+                "title": "The Negro Motorist Green Book",
+                "subtitle": "1940 Edition",
+                "authors": [
+                  "Victor H. Green"
+                ],
+                "publisher": "Colchis Books",
+                "description": "The idea of \"The Green Book\" is to give the Motorist and Tourist a Guide not only of the Hotels and Tourist Homes in all of the large cities, but other classifications that will be found useful wherever he may be. Also facts and information that the Negro Motorist can use and depend upon. There are thousands of places that the public doesn't know about and aren't listed. Perhaps you know of some? If so send in their names and addresses and the kind of business, so that we might pass it along to the rest of your fellow Motorists. You will find it handy on your travels, whether at home or in some other state, and is up to date. Each year we are compiling new lists as some of these places move, or go out of business and new business places are started giving added employment to members of our race.",
+                "readingModes": {
+                  "text": true,
+                  "image": true
+                },
+                "printType": "BOOK",
+                "categories": [
+                  "History"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=SKWqDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=SKWqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=SKWqDwAAQBAJ&pg=PP1&dq=Green&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=SKWqDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=SKWqDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 6.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 6.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=SKWqDwAAQBAJ&rdid=book-SKWqDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 6990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 6990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Negro_Motorist_Green_Book-sample-epub.acsm?id=SKWqDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Negro_Motorist_Green_Book-sample-pdf.acsm?id=SKWqDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=SKWqDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The idea of &quot;The Green Book&quot; is to give the Motorist and Tourist a Guide not only of the Hotels and Tourist Homes in all of the large cities, but other classifications that will be found useful wherever he may be."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "ZqKZzgEACAAJ",
+              "etag": "KODiWFfdkQE",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/ZqKZzgEACAAJ",
+              "volumeInfo": {
+                "title": "The Negro Motorist Green-Book",
+                "subtitle": "1940 Facsimile Edition Paperback",
+                "authors": [
+                  "Victor Green"
+                ],
+                "publishedDate": "2021-08-04",
+                "description": "In the segregated US of the mid-twentieth century, African-American travelers could have a hard time finding towns where they were legally allowed to stay at night and hotels, restaurants, and service stations willing to serve them. In 1936, Victor Hugo Green published the first annual volume of The Negro Motorist Green-Book, later renamed The Negro Travelers' Green Book. This facsimile of the 1940 edition brings you all the listings, articles, and advertisements aimed at the Black travelers trying to find their way across a country where they were so rarely welcome.Also available: The Negro Travelers' Green Book: 1954 Facsimile Edition",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1639230343"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781639230341"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 54,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=ZqKZzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=ZqKZzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ZqKZzgEACAAJ&dq=Green&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ZqKZzgEACAAJ&dq=Green&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Negro_Motorist_Green_Book.html?hl=&id=ZqKZzgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ZqKZzgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "This facsimile of the 1940 edition brings you all the listings, articles, and advertisements aimed at the Black travelers trying to find their way across a country where they were so rarely welcome.Also available: The Negro Travelers&#39; Green ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "_Y3AzQEACAAJ",
+              "etag": "vxLfGEbOj68",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/_Y3AzQEACAAJ",
+              "volumeInfo": {
+                "title": "The Negro Motorist Green-Book",
+                "subtitle": "1940 Facsimile Edition",
+                "authors": [
+                  "Victor H Green"
+                ],
+                "publishedDate": "2020-08-16",
+                "description": "2020 Reprint of 1940 Edition. The Negro Motorist Green Book was an annual guidebook for African American road trippers. It was originated and published by African American, New York City mailman Victor Hugo Green from 1936 to 1966, during the era of Jim Crow laws, when open and often legally prescribed discrimination against African Americans especially and other non-whites was widespread. Although pervasive racial discrimination and poverty limited black car ownership, the emerging African American middle class bought automobiles as soon as they could, though they faced a variety of dangers and inconveniences along the road, from refusal of food and lodging to arbitrary arrest. In response, Green wrote his guide to services and places relatively friendly to African Americans, eventually expanding its coverage from the New York area to much of North America, as well as founding a travel agency. Many Black Americans took to driving, in part to avoid segregation on public transportation. As the writer George Schuyler put it in 1930, \"all Negroes who can do so purchase an automobile as soon as possible in order to be free of discomfort, discrimination, segregation and insult.\" Black Americans employed as athletes, entertainers, and salesmen also traveled frequently for work purposes. Shortly after passage of the Civil Rights Act of 1964, which outlawed the types of racial discrimination that had made the Green Book necessary, publication ceased, and it fell into obscurity. There has been a revived interest in it in the early 21st century in connection with studies of black travel during the Jim Crow era.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "168422487X"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781684224876"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 56,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=_Y3AzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=_Y3AzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=_Y3AzQEACAAJ&dq=Green&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=_Y3AzQEACAAJ&dq=Green&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Negro_Motorist_Green_Book.html?hl=&id=_Y3AzQEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=_Y3AzQEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;Hotels, taverns, garages, night-clubs, restaurants, service-stations, automotive, tourist-homes, road-houses, barber-shops, beauty-parlors.&quot;"
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "Gf4oOFhIpNEC",
+              "etag": "ro7v4Ixjl9Q",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/Gf4oOFhIpNEC",
+              "volumeInfo": {
+                "title": "Standards for Internal Control in the Federal Government",
+                "authors": [
+                  "Government Accountability Office"
+                ],
+                "publisher": "Government Printing Office",
+                "publishedDate": "2014-12",
+                "description": "This key resource is often referred to as the \"Green Book\". Federal policymakers and program managers are continually seeking ways to better achieve agencies' missions and program results, in other words, they are seeking ways to improve accountability. A key factor in helping achieve such outcomes and minimize operational problems is to implement appropriate internal control. Effective internal control also helps in managing change to cope with shifting environments and evolving demands and priorities. As programs change and as agencies strive to improve operational processes and implement new technological developments, management must continually assess and evaluate its internal control to assure that the control activities being used are effective and updated when necessary. The Federal Managers' Financial Integrity Act of 1982 (FMFIA) requires the General Accounting Office (GAO) to issue standards for internal control in government. The standards provide the overall framework for establishing and maintaining internal control and for identifying and addressing major performance and management challenges, and areas at greatest risk of fraud, waste, abuse and mismanagement. This report explores the Five Standards for Internal Control as identified by GAO for policymakers and program managers: - Control Environment - Risk Assessment - Control Activities - Information and Communications - Monitoring These standards apply to all aspects of an agency's operations: programmatic, financial, and compliance. However, they are not intended to limit or interfere with duly granted authority related to developing legislation, rule-making, or other discretionary policy-making in an agency. These standards provide a general framework. In implementing these standards, management is responsible for developing the detailed policies, procedures, and practices to fit their agency's operations and to ensure that they are built into and an integral part of operations. Other related products: Government Auditing Standards: 2011 Revision (Yellow Book) --print format can be found here: https: //bookstore.gpo.gov/products/sku/020-000-00291-3 --ePub format can be found here: https: //bookstore.gpo.gov/products/sku/999-000-44443-1 Reducing the Deficit: Spending and Revenue Options can be found here: https: //bookstore.gpo.gov/products/sku/052-070-07612-7 The Budget and Economic Outlook: 2016 to 2026 can be found here: https: //bookstore.gpo.gov/products/sku/052-070-07697-6",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0160925274"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780160925276"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 92,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.7.7.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=Gf4oOFhIpNEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=Gf4oOFhIpNEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=Gf4oOFhIpNEC&pg=PP1&dq=Green&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=Gf4oOFhIpNEC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Gf4oOFhIpNEC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 34,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 18.7,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=Gf4oOFhIpNEC&rdid=book-Gf4oOFhIpNEC&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 34000000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 18700000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Gf4oOFhIpNEC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "This key resource is often referred to as the &quot;Green Book&quot;."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "DCSnk9V3ivkC",
+              "etag": "5sa83m6t9KQ",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/DCSnk9V3ivkC",
+              "volumeInfo": {
+                "title": "FDA Approved Animal Drug Products",
+                "publishedDate": "1997",
+                "industryIdentifiers": [
+                  {
+                    "type": "OTHER",
+                    "identifier": "UOM:39015035689283"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "printType": "BOOK",
+                "categories": [
+                  "Electronic journals"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "2.6.8.0.full.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=DCSnk9V3ivkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=DCSnk9V3ivkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=DCSnk9V3ivkC&printsec=frontcover&dq=Green&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=DCSnk9V3ivkC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=DCSnk9V3ivkC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FREE",
+                "isEbook": true,
+                "buyLink": "https://play.google.com/store/books/details?id=DCSnk9V3ivkC&rdid=book-DCSnk9V3ivkC&rdot=1&source=gbs_api"
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": true,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false,
+                  "downloadLink": "http://books.google.com/books/download/FDA_Approved_Animal_Drug_Products.epub?id=DCSnk9V3ivkC&hl=&output=epub&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=DCSnk9V3ivkC&hl=&source=gbs_api",
+                "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+                "quoteSharingAllowed": false
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "rhJzAAAAMAAJ",
+              "etag": "pZk8Gx0P7uU",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/rhJzAAAAMAAJ",
+              "volumeInfo": {
+                "title": "Qaddafi's Green Book",
+                "subtitle": "",
+                "authors": [
+                  "Muammar Qaddafi",
+                  "Henry M. Christman"
+                ],
+                "publisher": "Buffalo, N.Y. : Prometheus Books",
+                "publishedDate": "1988",
+                "industryIdentifiers": [
+                  {
+                    "type": "OTHER",
+                    "identifier": "UOM:39015013022796"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 114,
+                "printType": "BOOK",
+                "categories": [
+                  "Political Science"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=rhJzAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=rhJzAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=rhJzAAAAMAAJ&q=Green&dq=Green&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=rhJzAAAAMAAJ&dq=Green&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Qaddafi_s_Green_Book.html?hl=&id=rhJzAAAAMAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=rhJzAAAAMAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "ZB6mzgEACAAJ",
+              "etag": "ZPqrhFMFxMw",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/ZB6mzgEACAAJ",
+              "volumeInfo": {
+                "title": "The Photographer's Green Book",
+                "subtitle": "Vol 1",
+                "authors": [
+                  "Jay Simple",
+                  "Sydney Ellison"
+                ],
+                "publishedDate": "2021-08-25",
+                "description": "Part archive and part guidebook, The Photographer's Green Book's inaugural publication, Vol. 1, explores the themes of history, community, and process in photography. It explores these themes through essays, interviews from artists and organizations, and images from diverse lens based artists. The book also features questions and organization listings to help readers further engage with these concepts.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0578996618"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780578996615"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "printType": "BOOK",
+                "categories": [
+                  "Artists"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=ZB6mzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=ZB6mzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ZB6mzgEACAAJ&dq=Green&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ZB6mzgEACAAJ&dq=Green&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Photographer_s_Green_Book.html?hl=&id=ZB6mzgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ZB6mzgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "It explores these themes through essays, interviews from artists and organizations, and images from diverse lens based artists. The book also features questions and organization listings to help readers further engage with these concepts."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "NSQR3uU07asC",
+              "etag": "WpHpeeeLC6o",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/NSQR3uU07asC",
+              "volumeInfo": {
+                "title": "The Negro",
+                "authors": [
+                  "William Edward Burghardt Du Bois"
+                ],
+                "publisher": "IndyPublish.com",
+                "publishedDate": "1915",
+                "industryIdentifiers": [
+                  {
+                    "type": "OTHER",
+                    "identifier": "STANFORD:36105002511173"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 274,
+                "printType": "BOOK",
+                "categories": [
+                  "Africa"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "2.6.7.0.full.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=NSQR3uU07asC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=NSQR3uU07asC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=NSQR3uU07asC&printsec=frontcover&dq=Green&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=NSQR3uU07asC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=NSQR3uU07asC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FREE",
+                "isEbook": true,
+                "buyLink": "https://play.google.com/store/books/details?id=NSQR3uU07asC&rdid=book-NSQR3uU07asC&rdot=1&source=gbs_api"
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": true,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false,
+                  "downloadLink": "http://books.google.com/books/download/The_Negro.epub?id=NSQR3uU07asC&hl=&output=epub&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=NSQR3uU07asC&hl=&source=gbs_api",
+                "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+                "quoteSharingAllowed": false
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "nkSJDwAAQBAJ",
+              "etag": "Ju+36vbGsqA",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/nkSJDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Overground Railroad",
+                "subtitle": "The Green Book and the Roots of Black Travel in America",
+                "authors": [
+                  "Candacy A. Taylor"
+                ],
+                "publisher": "Abrams",
+                "publishedDate": "2020-01-07",
+                "description": "This historical exploration of the Green Book offers “a fascinating [and] sweeping story of black travel within Jim Crow America across four decades” (The New York Times Book Review). Published from 1936 to 1966, the Green Book was hailed as the “black travel guide to America.” At that time, it was very dangerous and difficult for African-Americans to travel because they couldn’t eat, sleep, or buy gas at most white-owned businesses. The Green Book listed hotels, restaurants, gas stations, and other businesses that were safe for black travelers. It was a resourceful and innovative solution to a horrific problem. It took courage to be listed in the Green Book, and Overground Railroad celebrates the stories of those who put their names in the book and stood up against segregation. Author Candacy A. Taylor shows the history of the Green Book, how we arrived at our present historical moment, and how far we still have to go when it comes to race relations in America. A New York Times Notable Book of 2020",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781683356578"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1683356578"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": true
+                },
+                "pageCount": 458,
+                "printType": "BOOK",
+                "categories": [
+                  "History"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 5,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.9.7.0.preview.3",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=nkSJDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=nkSJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=nkSJDwAAQBAJ&pg=PP1&dq=Green&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=nkSJDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=nkSJDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 21.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 13.19,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=nkSJDwAAQBAJ&rdid=book-nkSJDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 21990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 13190000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Overground_Railroad-sample-epub.acsm?id=nkSJDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Overground_Railroad-sample-pdf.acsm?id=nkSJDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=nkSJDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "It was a resourceful and innovative solution to a horrific problem. It took courage to be listed in the Green Book, and Overground Railroad celebrates the stories of those who put their names in the book and stood up against segregation."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "eCgvEAAAQBAJ",
+              "etag": "nTRnbf3AmtU",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/eCgvEAAAQBAJ",
+              "volumeInfo": {
+                "title": "The Anthropocene Reviewed (Signed Edition)",
+                "subtitle": "Essays on a Human-Centered Planet",
+                "authors": [
+                  "John Green"
+                ],
+                "publisher": "Penguin",
+                "publishedDate": "2021-05-18",
+                "description": "Goodreads Choice winner for Nonfiction 2021 and instant #1 bestseller! A deeply moving collection of personal essays from John Green, the author of The Fault in Our Stars and Turtles All the Way Down. “The perfect book for right now.” –People “The Anthropocene Reviewed is essential to the human conversation.” –Library Journal, starred review The Anthropocene is the current geologic age, in which humans have profoundly reshaped the planet and its biodiversity. In this remarkable symphony of essays adapted and expanded from his groundbreaking podcast, bestselling author John Green reviews different facets of the human-centered planet on a five-star scale—from the QWERTY keyboard and sunsets to Canada geese and Penguins of Madagascar. Funny, complex, and rich with detail, the reviews chart the contradictions of contemporary humanity. As a species, we are both far too powerful and not nearly powerful enough, a paradox that came into sharp focus as we faced a global pandemic that both separated us and bound us together. John Green’s gift for storytelling shines throughout this masterful collection. The Anthropocene Reviewed is a open-hearted exploration of the paths we forge and an unironic celebration of falling in love with the world. This is a signed edition.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780525555216"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0525555218"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 305,
+                "printType": "BOOK",
+                "categories": [
+                  "Literary Collections"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 16,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.0.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=eCgvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=eCgvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=eCgvEAAAQBAJ&printsec=frontcover&dq=Green&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=eCgvEAAAQBAJ&dq=Green&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Anthropocene_Reviewed_Signed_Edition.html?hl=&id=eCgvEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=eCgvEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The Anthropocene Reviewed is a open-hearted exploration of the paths we forge and an unironic celebration of falling in love with the world. This is a signed edition."
+              }
+            }
+          ]
+        }
+  recorded_at: Mon, 12 Dec 2022 19:37:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=A
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 12 Dec 2022 19:41:55 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 4663,
+          "items": [
+            {
+              "kind": "books#volume",
+              "id": "9b3jAAAAQBAJ",
+              "etag": "QJaI6s01l6M",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/9b3jAAAAQBAJ",
+              "volumeInfo": {
+                "title": "Think Like A Champion",
+                "authors": [
+                  "Dr. Rudi Webster"
+                ],
+                "publisher": "Harper Collins",
+                "publishedDate": "2013-04-10",
+                "description": "The book contains the secrets of success, and it applies as much to most forms of life's endeavour as it does to sport When you understand that pressure is part and parcel of your life and that there are things you can do to control Wit, you will face up to it in a positive way and use it to your advantage.' -Rahul Dravid Rudi Webster, a doctor who has done pioneering work in the field of sports psychology, draws up a fail-safe recipe for on-the-ground performance optimization in this remarkable book. He ropes in some of the world's finest sportsmen to explain their own success techniques: Mahendra Singh Dhoni, Rahul Dravid, V.V.S. Laxman, Clive Lloyd, Dennis Lillee, Wasim Akram, Jacques Kallis and Sir Garry Sobers. They talk about the four interconnected pillars that performance in sport is built on: fitness, technique, strategy and mental skill - but, unanimously, they declare that the mental pillar is the most important. At the highest level of sport, it is this skill that determines how well the other components are combined and executed. Dr Webster's book aims to optimize every aspect of a player's form and performance. Through inventive techniques, especially visualization and mental rehearsal, he reinforces the practice of a physical skill so that it is learned more quickly and imprinted more powerfully in the mind - and thus better executed. Says ace cricketer V.V.S. Laxman, 'These two techniques help a player improve dramatically. Every young player should [...] make them an important part of their practice and preparation routine.' This book is all you need to call forth your best performance at the right time.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9789350296660"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "9350296667"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 392,
+                "printType": "BOOK",
+                "categories": [
+                  "Sports & Recreation"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.3.3.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=9b3jAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=9b3jAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=9b3jAAAAQBAJ&pg=PT12&dq=A&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=9b3jAAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=9b3jAAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 19.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 19.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=9b3jAAAAQBAJ&rdid=book-9b3jAAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 19990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 19990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Think_Like_A_Champion-sample-epub.acsm?id=9b3jAAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=9b3jAAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Batting with \u003cb\u003ea\u003c/b\u003e runner because of \u003cb\u003ea\u003c/b\u003e bad back, Laxman and number ten batsman Ishant Sharma put on eightyone runs to take the score to 205 before Sharma fell. Laxman who scored seventythree not out, and last man Pragyan Ojha knocked off&nbsp;..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "_Nb4DAAAQBAJ",
+              "etag": "6EbeUcW4ikY",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/_Nb4DAAAQBAJ",
+              "volumeInfo": {
+                "title": "A Fortunate Universe",
+                "authors": [
+                  "Geraint F. Lewis",
+                  "Luke A. Barnes"
+                ],
+                "publisher": "Cambridge University Press",
+                "publishedDate": "2016-10-06",
+                "description": "An engaging defence and critique of the various arguments from both science and religion on the fine-tuning of the Universe.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781107156616"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1107156610"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 395,
+                "printType": "BOOK",
+                "categories": [
+                  "Science"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.2.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=_Nb4DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=_Nb4DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=_Nb4DAAAQBAJ&printsec=frontcover&dq=A&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=_Nb4DAAAQBAJ&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Fortunate_Universe.html?hl=&id=_Nb4DAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/A_Fortunate_Universe-sample-pdf.acsm?id=_Nb4DAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=_Nb4DAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "An engaging defence and critique of the various arguments from both science and religion on the fine-tuning of the Universe."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "01bQ6f_FB0IC",
+              "etag": "lluifg5nql0",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/01bQ6f_FB0IC",
+              "volumeInfo": {
+                "title": "A Mapmaker's Dream",
+                "subtitle": "The Meditations of Fra Mauro, Cartographer to the Court of Venice: A Novel",
+                "authors": [
+                  "James Cowan"
+                ],
+                "publisher": "Shambhala Publications",
+                "publishedDate": "2007-12-18",
+                "description": "In sixteenth-century Venice, in an island monastery, a cloistered monk experiences the adventure of a lifetime—all within the confines of his cell. Part historical fiction, part philosophical mystery, A Mapmaker's Dream tells the story of Fra Mauro and his struggle to realize his life's work: to make a perfect map—one that represents the full breadth of Creation. News of Mauro's projects attracts explorers, pilgrims, travelers, and merchants, all eager to contribute their accounts of faraway people and places. As he listens to the tales of the strange and fantastic things they've seen, Mauro comes to regard the world as much more than continents and kingdoms: that it is also made up of a vast and equally real interior landscape of beliefs, aspirations, and dreams. Mauro's map grows and takes shape, becoming both more complete and incomprehensible. In the process, the boundaries of Mauro's world are pushed to the extreme, raising questions about the relationship between representation, imagination, and the nature of reality itself.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781590305201"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1590305205"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 178,
+                "printType": "BOOK",
+                "categories": [
+                  "Fiction"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 4,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "2.1.1.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=01bQ6f_FB0IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=01bQ6f_FB0IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=01bQ6f_FB0IC&printsec=frontcover&dq=A&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=01bQ6f_FB0IC&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Mapmaker_s_Dream.html?hl=&id=01bQ6f_FB0IC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/A_Mapmaker_s_Dream-sample-pdf.acsm?id=01bQ6f_FB0IC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=01bQ6f_FB0IC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Part historical fiction, part philosophical mystery, A Mapmaker&#39;s Dream tells the story of Fra Mauro and his struggle to realize his life&#39;s work: to make a perfect map—one that represents the full breadth of Creation."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "BoXO4ItsuaMC",
+              "etag": "DCt92jxwQA8",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/BoXO4ItsuaMC",
+              "volumeInfo": {
+                "title": "A Theory of Semiotics",
+                "authors": [
+                  "Umberto Eco"
+                ],
+                "publisher": "Indiana University Press",
+                "publishedDate": "1979",
+                "description": ". . . the greatest contribution to [semiotics] since the pioneering work of C. S. Peirce and Charles Morris. --Journal of Aesthetics and Art Criticism . . . draws on philosophy, linguistics, sociology, anthropology and aesthetics and refers to a wide range of scholarship . . . raises many fascinating questions. --Language in Society . . . a major contribution to the field of semiotic studies. --Robert Scholes, Journal of Aesthetics and Art Criticism . . . the most significant text on the subject published in the English language that I know of. --Arthur Asa Berger, Journal of Communication Eco's treatment demonstrates his mastery of the field of semiotics. It focuses on the twin problems of the doctrine of signs--communication and signification--and offers a highly original theory of sign production, including a carefully wrought typology of signs and modes of production.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0253202175"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780253202178"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 372,
+                "printType": "BOOK",
+                "categories": [
+                  "Literary Criticism"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 4,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.3.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=BoXO4ItsuaMC&printsec=frontcover&dq=A&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=BoXO4ItsuaMC&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Theory_of_Semiotics.html?hl=&id=BoXO4ItsuaMC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/A_Theory_of_Semiotics-sample-pdf.acsm?id=BoXO4ItsuaMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=BoXO4ItsuaMC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot; . . . the greatest contribution to [semiotics] since the pioneering work of C. S. Peirce and Charles Morris.&quot; —Journal of Aesthetics and Art Criticism &quot; . . . draws on philosophy, linguistics, sociology, anthropology and aesthetics and ..."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "L3mUEAAAQBAJ",
+              "etag": "12oR8TbMguw",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/L3mUEAAAQBAJ",
+              "volumeInfo": {
+                "title": "Anam Cara [Twenty-fifth Anniversary Edition]",
+                "subtitle": "A Book of Celtic Wisdom",
+                "authors": [
+                  "John O'Donohue"
+                ],
+                "publisher": "HarperCollins",
+                "publishedDate": "2022-11-29",
+                "description": "“In this twenty-fifth anniversary edition, you will find John a “soul friend” on your own journey through life, offering support and solace, clarity, and consciousness—expanding narratives that invite you to experience relationships with people, nature, and even your inner world in new ways that nurture well-being and resilience in these challenging times.” —Daniel J. Siegel, MD, Neuropsychiatrist and New York Times Bestselling Author A special twenty-fifth anniversary edition of the classic work of Celtic spirituality and mysticism by beloved poet and philosopher, John O'Donohue, with a new introduction by the President of Ireland, Michael D. Higgins, an afterword by the late author’s brother, Pat O'Donohue, and insightful material from O'Donohue's circle of close friends. In this revered classic, John O’Donohue excavates themes of friendship, belonging, solitude, creativity and the imagination, among many others. Widely recognized for bringing Celtic spirituality into modern dialogue, his unique insights from the ancient world speak with urgency for our need to rediscover the thresholds of the soul. With lyrical wisdom and fluency, O'Donohue encourages pathways of discovery to come home to the natural rhythm in ourselves in sacred connection with one another and the landscapes we inhabit. This timeless collection nourishes the heart and elevates the spirit. It is \"a book to read and reread forever.” (Irish Times)",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780063270596"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0063270595"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 240,
+                "printType": "BOOK",
+                "categories": [
+                  "Body, Mind & Spirit"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 14,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.2.2.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=L3mUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=L3mUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=L3mUEAAAQBAJ&printsec=frontcover&dq=A&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=L3mUEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=L3mUEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 12.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 12.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=L3mUEAAAQBAJ&rdid=book-L3mUEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 12990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 12990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Anam_Cara_Twenty_fifth_Anniversary_Editi-sample-epub.acsm?id=L3mUEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=L3mUEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "This timeless collection nourishes the heart and elevates the spirit. It is &quot;a book to read and reread forever.” (Irish Times)"
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "3y50DwAAQBAJ",
+              "etag": "TWZc17EPIMg",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/3y50DwAAQBAJ",
+              "volumeInfo": {
+                "title": "A Book That Takes Its Time",
+                "subtitle": "An Unhurried Adventure in Creative Mindfulness",
+                "authors": [
+                  "Irene Smit",
+                  "Astrid van der Hulst",
+                  "Editors of Flow magazine"
+                ],
+                "publisher": "Workman Publishing",
+                "publishedDate": "2017-10-03",
+                "description": "Take time to breathe. Take time to create. Take time to reflect, take time to let go. A book that’s unique in the way it mixes reading and doing, A Book That Takes Its Time is like a mindfulness retreat between two covers. Created in partnership with Flow, the groundbreaking international magazine that celebrates creativity, beautiful illustration, a love of paper, and life’s little pleasures, A Book That Takes Its Time mixes articles, inspiring quotes, and what the editors call “goodies”—bound-in cards, mini-journals, stickers, posters, blank papers for collaging, and more—giving it a distinctly handcrafted, collectible feeling. Read about the benefits of not multitasking, then turn to “The Joy of One Thing at a Time Notebook” tucked into the pages. After a short piece on the power of slowing down, fill in the designed notecards for a Beautiful Moments jar. Make a personal timeline. Learn the art of hand-lettering. Dig into your Beginner’s Mind. Embrace the art of quitting. Take the writing cure. And always smile. Move slowly and with intention through A Book That Takes Its Time, and discover that sweet place where life can be both thoughtful and playful.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780761193777"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0761193774"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 257,
+                "printType": "BOOK",
+                "categories": [
+                  "Body, Mind & Spirit"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.0.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=3y50DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=3y50DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=3y50DwAAQBAJ&printsec=frontcover&dq=A&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=3y50DwAAQBAJ&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Book_That_Takes_Its_Time.html?hl=&id=3y50DwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/A_Book_That_Takes_Its_Time-sample-pdf.acsm?id=3y50DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=3y50DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Embrace the art of quitting. Take the writing cure. And always smile. Move slowly and with intention through A Book That Takes Its Time, and discover that sweet place where life can be both thoughtful and playful."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "dGgbAQAAMAAJ",
+              "etag": "/PQW3boHAUs",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/dGgbAQAAMAAJ",
+              "volumeInfo": {
+                "title": "A Diary from Dixie",
+                "authors": [
+                  "Mary Boykin Chesnut"
+                ],
+                "publisher": "Gramercy",
+                "publishedDate": "1997",
+                "description": "The original diary of Mary Chesnut, an important work that was repeatedly quoted during the famous television documentary The Civil War, provides an insightful look into how the war affected the daily lives of the people of the South.",
+                "industryIdentifiers": [
+                  {
+                    "type": "OTHER",
+                    "identifier": "PSU:000056749311"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 424,
+                "printType": "BOOK",
+                "categories": [
+                  "Biography & Autobiography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=dGgbAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=dGgbAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=dGgbAQAAMAAJ&q=A&dq=A&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=dGgbAQAAMAAJ&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Diary_from_Dixie.html?hl=&id=dGgbAQAAMAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=dGgbAQAAMAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The original diary of Mary Chesnut, an important work that was repeatedly quoted during the famous television documentary The Civil War, provides an insightful look into how the war affected the daily lives of the people of the South."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "-7y3vwEACAAJ",
+              "etag": "tpc+wt4LCXM",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/-7y3vwEACAAJ",
+              "volumeInfo": {
+                "title": "A Wild and Precious Life",
+                "subtitle": "A Memoir",
+                "authors": [
+                  "Edie Windsor",
+                  "Joshua Lyon"
+                ],
+                "publisher": "St. Martin's Press",
+                "publishedDate": "2019-10-08",
+                "description": "A lively, intimate memoir from an icon of the gay rights movement, describing gay life in 1950s and 60s New York City and her longtime activism which opened the door for marriage equality. Edie Windsor became internationally famous when the Supreme Court ruled in her favor in her case seeking recognition from the US government for her marriage to her partner Thea Spyer. The ruling set the stage for marriage equality in the US and vaulted Edie into the spotlight. Edie embraced her role as a leader in the LGBT community; she had been living a groundbreaking life for decades. In this memoir, which she began before her death in 2017 and which was completed by her co-writer, Edie recounts her childhood in Philadelphia, her realization that she was a lesbian, and her active social life in Greenwich Village's underground gay scene. In the midst of dancing and breaking hearts all over town, Edie worked her way up to be one of the first female programmers for IBM, achieving their highest technical ranking, and was instrumental in developing their software. In the early 1960s Edie met Thea Spyer, an expat from a Dutch Jewish family that fled the Nazis, and a widely-respected psychologist. Their partnership lasted forty-six years, until Thea’s death in 2009. Edie found love again, marrying Judith Kasen in 2016. A remarkable portrait of an iconic woman, gay life in New York in the second half of the twentieth century, and the rise of LGBT activism.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1250195136"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781250195135"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 256,
+                "printType": "BOOK",
+                "categories": [
+                  "Biography & Autobiography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=-7y3vwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=-7y3vwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=-7y3vwEACAAJ&dq=A&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=-7y3vwEACAAJ&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Wild_and_Precious_Life.html?hl=&id=-7y3vwEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=-7y3vwEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Edie found love again, marrying Judith Kasen-Windsor in 2016. A Wild and Precious Life is remarkable portrait of an iconic woman, gay life in New York in the second half of the twentieth century, and the rise of LGBT activism."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "MIyeoAEACAAJ",
+              "etag": "GIA+ucg9xIA",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/MIyeoAEACAAJ",
+              "volumeInfo": {
+                "title": "A Glorious Dark",
+                "subtitle": "Finding Hope in the Tension between Belief and Experience",
+                "authors": [
+                  "A. J. Swoboda"
+                ],
+                "publisher": "Baker Books",
+                "publishedDate": "2015-02-03",
+                "description": "On Thursday as they ate the Passover meal with Jesus, the disciples believed that the kingdom was coming and they were on the front end of a revolution. Then came the tragedy of Friday and, somehow even worse, the silence of Saturday. They ran. They doubted. They despaired. Yet, within the grave, God's power was still flowing like a mighty river beneath the ice of winter. And then there was Sunday morning. Real, raw, and achingly honest, A Glorious Dark meets readers in the ambiguity, doubt, and uncertainty we feel when our beliefs about the world don't match up to reality. Tackling tough questions like Why is faith so hard? Why do I doubt? Why does God allow me to suffer? and Is God really with me in the midst of my pain? A. J. Swoboda puts into sharp focus a faith that is greater than our personal comfort or fulfilment. He invites readers to develop a faith that embraces the tension between what we believe and what we experience, showing that the very tension we seek to eliminate is where God meets us.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0801016967"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780801016967"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 240,
+                "printType": "BOOK",
+                "categories": [
+                  "Religion"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=MIyeoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=MIyeoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=MIyeoAEACAAJ&dq=A&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=MIyeoAEACAAJ&dq=A&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Glorious_Dark.html?hl=&id=MIyeoAEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=MIyeoAEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Why do I doubt? Why does God allow me to suffer? and Is God really with me in the midst of my pain? A. J. Swoboda puts into sharp focus a faith that is greater than our personal comfort or fulfilment."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "3guued5qS2IC",
+              "etag": "pMjQfUDfWBg",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/3guued5qS2IC",
+              "volumeInfo": {
+                "title": "A Course in Miracles",
+                "subtitle": "Combined Volume",
+                "authors": [
+                  "Helen Schucman, Scribe"
+                ],
+                "publisher": "Foundation for Inner Peace",
+                "publishedDate": "2008-05",
+                "description": "\"The only edition that contains in one place all of the writings that Dr. Helen Schucman, its Scribe, authorized to be printed\"--P. [4] of cover.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781883360269"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1883360269"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 1295,
+                "printType": "BOOK",
+                "categories": [
+                  "Body, Mind & Spirit"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 16,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.1.2.0.preview.2",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=3guued5qS2IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=3guued5qS2IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=3guued5qS2IC&printsec=frontcover&dq=A&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=3guued5qS2IC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=3guued5qS2IC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                  "amount": 17.99,
+                  "currencyCode": "USD"
+                },
+                "retailPrice": {
+                  "amount": 17.99,
+                  "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=3guued5qS2IC&rdid=book-3guued5qS2IC&rdot=1&source=gbs_api",
+                "offers": [
+                  {
+                    "finskyOfferType": 1,
+                    "listPrice": {
+                      "amountInMicros": 17990000,
+                      "currencyCode": "USD"
+                    },
+                    "retailPrice": {
+                      "amountInMicros": 17990000,
+                      "currencyCode": "USD"
+                    },
+                    "giftable": true
+                  }
+                ]
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/A_Course_in_Miracles-sample-epub.acsm?id=3guued5qS2IC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=3guued5qS2IC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;The only edition that contains in one place all of the writings that Dr. Helen Schucman, its Scribe, authorized to be printed&quot;--P. [4] of cover."
+              }
+            }
+          ]
+        }
+  recorded_at: Mon, 12 Dec 2022 19:41:55 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 12 Dec 2022 19:42:22 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "code": 400,
+            "message": "Missing query.",
+            "errors": [
+              {
+                "message": "Missing query.",
+                "domain": "global",
+                "reason": "queryRequired",
+                "location": "q",
+                "locationType": "parameter"
+              }
+            ]
+          }
+        }
+  recorded_at: Mon, 12 Dec 2022 19:42:22 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=lksjdf%3Balkhjhg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 12 Dec 2022 19:44:09 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 0
+        }
+  recorded_at: Mon, 12 Dec 2022 19:44:09 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=smith
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 12 Dec 2022 19:46:56 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 4219,
+          "items": [
+            {
+              "kind": "books#volume",
+              "id": "jpb3zgEACAAJ",
+              "etag": "HpkAkdGCoX0",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/jpb3zgEACAAJ",
+              "volumeInfo": {
+                "title": "A Book of Days",
+                "authors": [
+                  "Patti Smith"
+                ],
+                "publisher": "National Geographic Books",
+                "publishedDate": "2022-11-15",
+                "description": "A deeply moving and brilliantly idiosyncratic visual book of days by the National Book Award–winning author of Just Kids and M Train, featuring more than 365 images and reflections that chart Smith’s singular aesthetic—inspired by her wildly popular Instagram. In 2018, without any plan or agenda for what might happen next, Patti Smith posted her first Instagram photo: her hand with the simple message “Hello Everybody!” Known for shooting with her beloved Land camera 250, Smith started posting images from her phone including portraits of her kids, her radiator, her boots, and her Abyssinian cat, Cairo. Followers felt an immediate affinity with these miniature windows into Smith’s world, photographs of her daily coffee, the books she’s reading, the graves of beloved heroes—William Blake, Dylan Thomas, Sylvia Plath, Simone Weil, Albert Camus. Over time, a coherent story of a life devoted to art took shape, and more than a million followers responded to Smith’s unique aesthetic in images that chart her passions, devotions, obsessions, and whims. Original to this book are vintage photographs: anniversary pearls, a mother’s keychain, and a husband’s Mosrite guitar. Here, too, are never-before-seen photos of life on and off the road, train stations, obscure cafés, a notebook always nearby. In wide-ranging yet intimate daily notations, Smith shares dispatches from her travels around the world. With over 365 photographs taking you through a single year, A Book of Days is a new way to experience the expansive mind of the visionary poet, writer, and performer. Hopeful, elegiac, playful—and complete with an introduction by Smith that explores her documentary process—A Book of Days is a timeless offering for deeply uncertain times, an inspirational map of an artist’s life.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781039002074"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1039002072"
+                  }
+                ],
+                "readingModes": {
+                  "text": true,
+                  "image": false
+                },
+                "pageCount": 0,
+                "printType": "BOOK",
+                "categories": [
+                  "Literary Collections"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=jpb3zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=jpb3zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=jpb3zgEACAAJ&dq=smith&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=jpb3zgEACAAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/A_Book_of_Days.html?hl=&id=jpb3zgEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=jpb3zgEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Original to this book are vintage photographs: anniversary pearls, a mother&#39;s keychain, and a husband&#39;s Mosrite guitar."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "4PfaCwAAQBAJ",
+              "etag": "PvO9SU2bjis",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/4PfaCwAAQBAJ",
+              "volumeInfo": {
+                "title": "How Adam Smith Can Change Your Life",
+                "subtitle": "An Unexpected Guide to Human Nature and Happiness",
+                "authors": [
+                  "Russ Roberts"
+                ],
+                "publisher": "Portfolio",
+                "publishedDate": "2015-10-13",
+                "description": "\"How the insights of an 18th century economist can help us live better in the 21st century. Adam Smith became famous for The Wealth of Nations, but the Scottish economist also cared deeply about our moral choices and behavior--the subjects of his other brilliant book, The Theory of Moral Sentiments (1759). Now, economist Russ Roberts shows why Smith's neglected work might be the greatest self-help book you've never read. Roberts explores Smith's unique and fascinating approach to fundamental questions such as: - What is the deepest source of human satisfaction? - Why do we sometimes swing between selfishness and altruism? - What's the connection between morality and happiness? Drawing on current events, literature, history, and pop culture, Roberts offers an accessible and thought-provoking view of human behavior through the lenses of behavioral economics and philosophy\"--",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781591847953"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1591847958"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 274,
+                "printType": "BOOK",
+                "categories": [
+                  "Business & Economics"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 5,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=4PfaCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=4PfaCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=4PfaCwAAQBAJ&printsec=frontcover&dq=smith&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=4PfaCwAAQBAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/How_Adam_Smith_Can_Change_Your_Life.html?hl=&id=4PfaCwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=4PfaCwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Now, economist Russ Roberts shows why Smith&#39;s neglected work might be the greatest self-help book you&#39;ve never read."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "S2ZNEAAAQBAJ",
+              "etag": "zNI6lFnRQOU",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/S2ZNEAAAQBAJ",
+              "volumeInfo": {
+                "title": "Will",
+                "authors": [
+                  "Will Smith"
+                ],
+                "publisher": "Penguin",
+                "publishedDate": "2021-11-09",
+                "description": "The instant #1 New York Times bestseller! “It's the best memoir I've ever read.” —Oprah Winfrey “Will Smith isn't holding back in his bravely inspiring new memoir . . . An ultimately heartwarming read, Will provides a humane glimpse of the man behind the actor, producer and musician, as he bares all his insecurities and trauma.” —USA Today Winner of the NAACP Image Award for Outstanding Literary Achievement One of the most dynamic and globally recognized entertainment forces of our time opens up fully about his life, in a brave and inspiring book that traces his learning curve to a place where outer success, inner happiness, and human connection are aligned. Along the way, Will tells the story in full of one of the most amazing rides through the worlds of music and film that anyone has ever had. Will Smith’s transformation from a West Philadelphia kid to one of the biggest rap stars of his era, and then one of the biggest movie stars in Hollywood history, is an epic tale—but it’s only half the story. Will Smith thought, with good reason, that he had won at life: not only was his own success unparalleled, his whole family was at the pinnacle of the entertainment world. Only they didn't see it that way: they felt more like star performers in his circus, a seven-days-a-week job they hadn't signed up for. It turned out Will Smith's education wasn't nearly over. This memoir is the product of a profound journey of self-knowledge, a reckoning with all that your will can get you and all that it can leave behind. Written with the help of Mark Manson, author of the multi-million-copy bestseller The Subtle Art of Not Giving a F*ck, Will is the story of how one person mastered his own emotions, written in a way that can help everyone else do the same. Few of us will know the pressure of performing on the world's biggest stages for the highest of stakes, but we can all understand that the fuel that works for one stage of our journey might have to be changed if we want to make it all the way home. The combination of genuine wisdom of universal value and a life story that is preposterously entertaining, even astonishing, puts Will the book, like its author, in a category by itself.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781984877925"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1984877925"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 433,
+                "printType": "BOOK",
+                "categories": [
+                  "Biography & Autobiography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.0.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=S2ZNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=S2ZNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=S2ZNEAAAQBAJ&printsec=frontcover&dq=smith&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=S2ZNEAAAQBAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Will.html?hl=&id=S2ZNEAAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=S2ZNEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Along the way, Will tells the story in full of one of the most amazing rides through the worlds of music and film that anyone has ever had."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "8OoMAQAAMAAJ",
+              "etag": "BhPP9S8GlqI",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/8OoMAQAAMAAJ",
+              "volumeInfo": {
+                "title": "Jedediah Smith",
+                "subtitle": "No Ordinary Mountain Man",
+                "authors": [
+                  "Barton H. Barbour"
+                ],
+                "publishedDate": "2009",
+                "description": "Mountain man and fur trader Jedediah Smith casts a heroic shadow. He was the first Anglo-American to travel overland to California via the Southwest, and he roamed through more of the West than anyone else of his era. His adventures quickly became the stuff of legend. Using new information and sifting fact from folklore, Barton H. Barbour now offers a fresh look at this dynamic figure. Barbour tells how a youthful Smith was influenced by notable men who were his family's neighbors, including a member of the Lewis and Clark expedition. When he was twenty-three, hard times leavened with wanderlust set him on the road west. Barbour delves into Smith's journals to a greater extent than previous scholars and teases out compelling insights into the trader's itineraries and personality. Use of an important letter Smith wrote late in life deepens the author's perspective on the legendary trapper. Through Smith's own voice, this larger-than-life hero is shown to be a man concerned with business obligations and his comrades' welfare, and even a person who yearned for his childhood. Barbour also takes a hard look at Smith's views of American Indians, Mexicans in California, and Hudson's Bay Company competitors and evaluates his dealings with these groups in the fur trade. Dozens of monuments commemorate Smith today. This readable book is another, giving modern readers new insight into the character and remarkable achievements of one of the West's most complex characters.",
+                "industryIdentifiers": [
+                  {
+                    "type": "OTHER",
+                    "identifier": "UOM:39015080852984"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 312,
+                "printType": "BOOK",
+                "categories": [
+                  "Biography & Autobiography"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.2.0.preview.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=8OoMAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=8OoMAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=8OoMAQAAMAAJ&q=smith&dq=smith&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=8OoMAQAAMAAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Jedediah_Smith.html?hl=&id=8OoMAQAAMAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=8OoMAQAAMAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Dozens of monuments commemorate Smith today. This readable book is another, giving modern readers new insight into the character and remarkable achievements of one of the West&#39;s most complex characters."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "JIUmuAAACAAJ",
+              "etag": "6fiP20hUwQ4",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/JIUmuAAACAAJ",
+              "volumeInfo": {
+                "title": "Poster Child",
+                "subtitle": "The Kemba Smith Story",
+                "authors": [
+                  "Kemba Smith",
+                  "Monique W. Morris"
+                ],
+                "publishedDate": "2011",
+                "description": "\"In this long-awaited memoir, Kemba Smith shares her dramatic story, as it has never been told. 'Poster child: the Kemba Smith story' chronicles how she went from college student to drug dealer's girlfriend to domestic violence victim to federal prisoner. Kemba shares her story of how making poor choices blinded by love and devotion can have long-term consequences. Kemba's case drew support from across the nation and the world. Often being labeled the 'poster child' for reversing a disturbing trend in the rise of lengthy sentences for first-time, non-violent drug offenders, Kemba's story has been featured on CNN, Court TV, 'Nightline', 'Judge Hatchett', 'The Early Morning Show', and a host of other television programs.\"-- P. [4] of cover.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1934922668"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781934922668"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 333,
+                "printType": "BOOK",
+                "categories": [
+                  "Abused women"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=JIUmuAAACAAJ&dq=smith&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=JIUmuAAACAAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Poster_Child.html?hl=&id=JIUmuAAACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=JIUmuAAACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&#39;Poster child: the Kemba Smith story&#39; chronicles how she went from college student to drug dealer&#39;s girlfriend to domestic violence victim to federal prisoner."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "4gdYPgAACAAJ",
+              "etag": "sVzFSmhpoys",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/4gdYPgAACAAJ",
+              "volumeInfo": {
+                "title": "Rock Climbing Smith Rock State Park",
+                "subtitle": "A Comprehensive Guide to More Than 1,800 Routes",
+                "authors": [
+                  "Alan Watts"
+                ],
+                "publisher": "Falcon Guides",
+                "publishedDate": "2010-01-01",
+                "description": "The comprehensive guide to the place that brought sport climbing to North America— a full-color, thoroughly updated new edition Smith Rock State Park. It was on the impressive crags of this Oregon hideaway that American sport climbing came into its own, and to this day, some of the hardest climbs in the United States are found on these walls. Alan Watts, who has played a leading role in the development of this popular rock-climbing destination, details more than 1,700 routes at Smith Rock and the surrounding area. This new edition updates hundreds of routes, includes hundreds of new ones, and has new photos of each crag, wall, and route. No other guide is as comprehensive or thorough, and no author more respected for his intimate knowledge of one of the world's most popular climbing destinations.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0762741244"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780762741243"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 512,
+                "printType": "BOOK",
+                "categories": [
+                  "Travel"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=4gdYPgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=4gdYPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=4gdYPgAACAAJ&dq=smith&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=4gdYPgAACAAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Rock_Climbing_Smith_Rock_State_Park.html?hl=&id=4gdYPgAACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=4gdYPgAACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "The comprehensive guide to the place that brought sport climbing to North America— a full-color, thoroughly updated new edition Smith Rock State Park."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "AXVdAvI0JpcC",
+              "etag": "MnCzel22oo0",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/AXVdAvI0JpcC",
+              "volumeInfo": {
+                "title": "The Huston Smith Reader",
+                "authors": [
+                  "Huston Smith"
+                ],
+                "publisher": "Univ of California Press",
+                "publishedDate": "2012-03-26",
+                "description": "Collects wrritings that explore the author's understanding of religion and spirituality.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780520270220"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0520270223"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 278,
+                "printType": "BOOK",
+                "categories": [
+                  "History"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.0.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=AXVdAvI0JpcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=AXVdAvI0JpcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=AXVdAvI0JpcC&printsec=frontcover&dq=smith&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=AXVdAvI0JpcC&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Huston_Smith_Reader.html?hl=&id=AXVdAvI0JpcC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Huston_Smith_Reader-sample-pdf.acsm?id=AXVdAvI0JpcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=AXVdAvI0JpcC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "Collects wrritings that explore the author&#39;s understanding of religion and spirituality."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "57HMxAEACAAJ",
+              "etag": "66nU7ivqGFw",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/57HMxAEACAAJ",
+              "volumeInfo": {
+                "title": "Non-adhesive Binding",
+                "authors": [
+                  "Keith A. Smith"
+                ],
+                "publishedDate": "1992",
+                "description": "\"Demonstrates basic as well as elaborate bindings constructed without adhesives and requiring no presses or other heavy equipment. A needle, a pair of scissors and a few other minor tools are all that is needed\"--Back cover.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0927159058"
+                  },
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780927159050"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": false
+                },
+                "pageCount": 318,
+                "printType": "BOOK",
+                "categories": [
+                  "Artists' books"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=57HMxAEACAAJ&dq=smith&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=57HMxAEACAAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Non_adhesive_Binding.html?hl=&id=57HMxAEACAAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=57HMxAEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "&quot;Demonstrates basic as well as elaborate bindings constructed without adhesives and requiring no presses or other heavy equipment. A needle, a pair of scissors and a few other minor tools are all that is needed&quot;--Back cover."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "2wJbDwAAQBAJ",
+              "etag": "3UvGh69iUEg",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/2wJbDwAAQBAJ",
+              "volumeInfo": {
+                "title": "Charlotte Smith: Major Poetic Works",
+                "authors": [
+                  "Charlotte Smith"
+                ],
+                "publisher": "Broadview Press",
+                "publishedDate": "2017-05-25",
+                "description": "Immensely popular with contemporary readers, Smith’s major poetic works are foundational texts of the Romantic period. Smith’s innovations in poetic form have also placed her at the forefront of twenty-first-century scholarship on the period. This edition presents her three major poetic works—Elegiac Sonnets (1784–1800), The Emigrants (1793), and Beachy Head (1807). While the significance of these three volumes of poetry was recognized in their own time, this edition suggests that they remain major texts for thinking through such questions as the relationship between public and private; the ethical treatment of refugees and other persecuted people; the position of women in a patriarchal society; and the usefulness of science as a way of making sense of a complex and ever-changing world. This Broadview edition includes a new critical introduction that takes into account the developments in scholarship on Smith’s work and women’s writing over the past three decades, and it provides readers with a wealth of contextual material for understanding the writer and the social and literary environment within which she wrote, including key works by her precursors and contemporaries, selections from her letters, and reviews of her poetry.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9781554812844"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "1554812844"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 281,
+                "printType": "BOOK",
+                "categories": [
+                  "Poetry"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=2wJbDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=2wJbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=2wJbDwAAQBAJ&printsec=frontcover&dq=smith&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=2wJbDwAAQBAJ&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Charlotte_Smith_Major_Poetic_Works.html?hl=&id=2wJbDwAAQBAJ"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Charlotte_Smith_Major_Poetic_Works-sample-pdf.acsm?id=2wJbDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=2wJbDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "This edition presents her three major poetic works—Elegiac Sonnets (1784–1800), The Emigrants (1793), and Beachy Head (1807)."
+              }
+            },
+            {
+              "kind": "books#volume",
+              "id": "nchn6EI1EuAC",
+              "etag": "mXuuXrkszBU",
+              "selfLink": "https://www.googleapis.com/books/v1/volumes/nchn6EI1EuAC",
+              "volumeInfo": {
+                "title": "Lost in Transition",
+                "subtitle": "The Dark Side of Emerging Adulthood",
+                "authors": [
+                  "Christian Smith",
+                  "Kari Christoffersen",
+                  "Hilary Davidson",
+                  "Patricia Snell Herzog"
+                ],
+                "publisher": "OUP USA",
+                "publishedDate": "2011-09",
+                "description": "In Lost in Transition, Christian Smith and his collaborators draw on 230 in-depth interviews with a broad cross-section of emerging adults (ages 18-23) to investigate the difficulties young people face today, the underlying causes of those difficulties, and the consequences both for individuals and for American society as a whole. --From publisher description.",
+                "industryIdentifiers": [
+                  {
+                    "type": "ISBN_13",
+                    "identifier": "9780199828029"
+                  },
+                  {
+                    "type": "ISBN_10",
+                    "identifier": "0199828024"
+                  }
+                ],
+                "readingModes": {
+                  "text": false,
+                  "image": true
+                },
+                "pageCount": 291,
+                "printType": "BOOK",
+                "categories": [
+                  "Family & Relationships"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.2.1.0.preview.1",
+                "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+                },
+                "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=nchn6EI1EuAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=nchn6EI1EuAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=nchn6EI1EuAC&printsec=frontcover&dq=smith&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=nchn6EI1EuAC&dq=smith&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Lost_in_Transition.html?hl=&id=nchn6EI1EuAC"
+              },
+              "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+              },
+              "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                  "isAvailable": false
+                },
+                "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Lost_in_Transition-sample-pdf.acsm?id=nchn6EI1EuAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=nchn6EI1EuAC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+              },
+              "searchInfo": {
+                "textSnippet": "In Lost in Transition, Christian Smith and his collaborators draw on 230 in-depth interviews with a broad cross-section of emerging adults (ages 18-23) to investigate the difficulties young people face today, the underlying causes of those ..."
+              }
+            }
+          ]
+        }
+  recorded_at: Mon, 12 Dec 2022 19:46:56 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes/?key=<key>&q=wejhr98lkshefjwerdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 12 Dec 2022 19:47:32 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "books#volumes",
+          "totalItems": 0
+        }
+  recorded_at: Mon, 12 Dec 2022 19:47:32 GMT
+recorded_with: VCR 6.1.0
