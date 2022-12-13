@@ -159,3 +159,9 @@ UserBook.create!(user_id: user_5.id, book_id: book_35.id, status: 1)
 UserBook.create!(user_id: user_5.id, book_id: book_36.id, status: 1)
 UserBook.create!(user_id: user_5.id, book_id: book_37.id, status: 1)
 UserBook.create!(user_id: user_5.id, book_id: book_38.id, status: 1)
+
+#followings
+Following.create!(follower_id: user_1.id, followed_id: user_2.id)
+Following.create!(follower_id: user_1.id, followed_id: user_3.id)
+
+Following.create!(follower_id: user_2.id, followed_id: user_1.id)
