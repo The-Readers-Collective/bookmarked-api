@@ -11,6 +11,7 @@ module Types
     field :destroy_user_book, mutation: Mutations::UserBooks::DestroyUserBook
     field :create_user_book, mutation: Mutations::UserBooks::CreateUserBook
 
-
+    field :destroy_following, mutation: Mutations::Followings::DestroyFollowing
+    field :create_following, mutation: Mutations::Followings::CreateFollowing
   end
 end

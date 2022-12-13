@@ -8,6 +8,7 @@ class  Mutations::Users::DestroyUser <  Mutations::BaseMutation
     user = User.find(id)
         
     user.books.destroy_all
+    # user.followings.destroy_all
 
     user.destroy
     {

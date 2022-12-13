@@ -15,6 +15,7 @@ module Types
 
     field :all_owned_books, [Types::BookType]
     field :all_bookmarked_books, [Types::BookType]
+    field :all_followings, [Types::UserType]
 
     def all_owned_books
       object.user_books.where(status: 0).map { |user_book| user_book.book}
@@ -22,6 +23,11 @@ module Types
 
     def all_bookmarked_books
       object.user_books.where(status: 1).map { |user_book| user_book.book}
+    end
+
+    def all_followings
+      object.followings
+      # where(follower_id: object.id).map { |following| following.followed }
     end
 
   end
