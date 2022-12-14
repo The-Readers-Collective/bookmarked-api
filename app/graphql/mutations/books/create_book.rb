@@ -25,11 +25,6 @@ class Mutations::Books::CreateBook < Mutations::BaseMutation
         book: book,
         errors: []
       }
-    else
-      {
-        book: nil, 
-        errors: book.errors.full_messages
-      }
     end
   end
 end
