@@ -7,7 +7,6 @@ class Mutations::Followings::CreateFollowing < Mutations::BaseMutation
 
   def resolve(follower_id:, followed_id:)
     following = Following.new(follower_id: follower_id, followed_id: followed_id)
-    # binding.pry
     if following.is_unique && following.save
       {
         following: following,
