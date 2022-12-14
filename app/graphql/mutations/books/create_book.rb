@@ -20,7 +20,6 @@ class Mutations::Books::CreateBook < Mutations::BaseMutation
 
     if book.save
       UserBook.create!(user_id: user_id, book_id: book.id, status: 0)
-
       {
         book: book,
         errors: []
