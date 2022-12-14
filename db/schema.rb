@@ -31,11 +31,12 @@ ActiveRecord::Schema.define(version: 2022_12_05_230747) do
   end
 
   create_table "followings", force: :cascade do |t|
-    t.bigint "user_id"
-    t.integer "followed_id"
+    t.bigint "follower_id", null: false
+    t.bigint "followed_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_followings_on_user_id"
+    t.index ["followed_id"], name: "index_followings_on_followed_id"
+    t.index ["follower_id"], name: "index_followings_on_follower_id"
   end
 
   create_table "user_books", force: :cascade do |t|
@@ -54,7 +55,8 @@ ActiveRecord::Schema.define(version: 2022_12_05_230747) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "followings", "users"
+  add_foreign_key "followings", "users", column: "followed_id"
+  add_foreign_key "followings", "users", column: "follower_id"
   add_foreign_key "user_books", "books"
   add_foreign_key "user_books", "users"
 end

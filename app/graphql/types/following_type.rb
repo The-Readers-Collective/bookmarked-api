@@ -3,8 +3,8 @@
 module Types
   class FollowingType < Types::BaseObject
     field :id, ID, null: false
-    field :user_id, Integer
-    field :followed_id, Integer
+    field :follower_id, ID
+    field :followed_id, ID
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end
