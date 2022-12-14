@@ -2,11 +2,11 @@ class Mutations::Followings::DestroyFollowing < Mutations::BaseMutation
   argument :id, ID, required: true
 
   field :id, ID, null: true
-  field :user_book, Types::UserBookType, null: false
+  field :following, Types::FollowingType, null: false
 
   def resolve(id:)
-    user_book = UserBook.find(id)
-    user_book.destroy
+    following = Following.find(id)
+    following.destroy
     {
       id: id
     }

@@ -6,7 +6,6 @@ class  Mutations::Users::DestroyUser <  Mutations::BaseMutation
 
   def resolve(id:)
     user = User.find(id)
-        
     user.books.destroy_all
     # user.followings.destroy_all
 
@@ -16,4 +15,3 @@ class  Mutations::Users::DestroyUser <  Mutations::BaseMutation
     }
   end
 end
-
