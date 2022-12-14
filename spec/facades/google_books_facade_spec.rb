@@ -27,4 +27,16 @@ RSpec.describe 'Google Books Facade' do
       expect(book.book_cover).to eq("http://books.google.com/books/content?id=QCPBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api")
     end
   end
+  context 'Sad Path' do
+    it 'returns empty array if no books found with that book name', :vcr do
+      books = GoogleBooksFacade.books_by_name("lksjdf;alkhjhg")
+
+      expect(books).to eq([])
+    end
+    it 'returns empty array if no books found with that book name', :vcr do
+      books = GoogleBooksFacade.book_by_google_book_id("wejhr98lkshefjwerdf")
+
+      expect(books).to eq([])
+    end
+  end
 end
