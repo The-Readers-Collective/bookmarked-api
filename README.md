@@ -13,7 +13,8 @@
 		  - [View All Users](#view-all-users)
 		  - [View One User](#view-one-user)
 		  - [View "Books Owned" by User](#view-books-owned-by-user)
-		  - [View "Books Bookmarked" by User](#view-books-owned-by-user)
+		  - [View "Books Bookmarked" by User](#view-books-bookmarked-by-user)
+		  - [View "Followings" by User](#view-followings-by-user)
 		  - [View All Users, their UserBooks, and their Books](#view-all-users-and-all-books)
 		  - [View a single User, their UserBooks, and their Books](#view-a-single-user-and-their-books)
 		- Books
@@ -36,6 +37,9 @@
 		- UserBooks
 			- [Create a UserBook relationship](#create-a-userbook-relationship)
 			- [Delete a UserBook relationship](#delete-a-userbook-relationship)
+		- Followings
+			- [Create a Following](#create-a-following)
+			- [Delete a Following](#delete-a-following)
 3. [Local Setup](#local-setup)
 4. [Versions](#versions)
 5. [Contributors](#contributors)
@@ -761,6 +765,62 @@ mutation{
 }
 ```
 
+### Create a Following
+Lets you create a following between a follower user and the followed user.
+
+<b>Example Query:</b>
+```json
+mutation {
+    createFollowing(input:{followerId: "1", followedId: "2"}) {
+		following {
+        	id
+        	followedId
+        	followerId
+      	}
+ 	 }
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "createFollowing": {
+      "following": {
+        "id": "6",
+        "followedId": "2",
+        "followerId": "1"
+      }
+    }
+  }
+}
+```
+
+### Delete a Following
+Lets you destroy a following with a given following id
+
+<b>Example Query:</b>
+```json
+mutation {
+    destroyFollowing(input:{id: "6"}) {
+			id
+ 	 } 
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "destroyFollowing": {
+       "id": "6"
+    }
+  }
+}
+```
+
 ### View Books Owned by User
 Lets you view all books owned by user
 * Availble User query fields: `name`, `zipcode`, `email`
@@ -858,6 +918,46 @@ query {
           "id": "44",
           "bookTitle": "The Dragonbone Chair",
           "googleBookId": "BSuJEAAAQBAJ"
+        }
+      ]
+    }
+  }
+}
+```
+
+### View Followings by User
+Lets you view all Users the given user is following
+
+<b>Example Query:</b>
+```json
+query {
+    user(id: "1") {
+			allFollowings {
+        id
+        name
+      }
+ 	 } 
+}
+```
+
+<b>Example Output:</b>
+
+```json
+{
+  "data": {
+    "user": {
+      "allFollowings": [
+        {
+          "id": "3",
+          "name": "Paul B"
+        },
+        {
+          "id": "2",
+          "name": "Joe B"
+        },
+        {
+          "id": "4",
+          "name": "Jane D"
         }
       ]
     }
