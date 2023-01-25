@@ -28,7 +28,6 @@ gem 'faraday'
 gem 'figaro'
 gem 'graphql'
 gem 'jsonapi-serializer'
-
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
@@ -39,7 +38,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'faker'
   gem 'pry'
-  gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 5.0'
 end
 
@@ -53,7 +51,7 @@ end
 group :test do
   gem 'bullet'
   gem 'rubocop'
-  gem 'rubocop-faker'
+  # gem 'rubocop-faker'
   gem 'rubocop-rails'
   gem 'simplecov'
   gem 'vcr'

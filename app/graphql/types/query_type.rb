@@ -35,6 +35,13 @@ module Types
       GoogleBooksFacade.books_by_name(title)
     end
 
+    field :zipcode, [Types::ZipcodeType], null: false do
+      argument :zipcode_start, :zipcode_end, Integer, required: true
+    end
+    def zipcode_distance(zipcode_start:, zipcode_end:)
+      ZipcodeFacade.distance_between_books(zipcode_start, zipcode_end)
+    end
+
     field :user_books, [Types::UserBookType], null: false
     def user_books
       UserBook.all

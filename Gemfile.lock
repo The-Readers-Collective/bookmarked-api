@@ -181,9 +181,6 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.24.0)
       parser (>= 3.1.1.0)
-    rubocop-faker (1.1.0)
-      faker (>= 2.12.0)
-      rubocop (>= 0.82.0)
     rubocop-rails (2.17.3)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
@@ -248,7 +245,6 @@ DEPENDENCIES
   rails (~> 5.2.8, >= 5.2.8.1)
   rspec-rails
   rubocop
-  rubocop-faker
   rubocop-rails
   shoulda-matchers (~> 5.0)
   simplecov
