@@ -61,5 +61,12 @@ module Types
       GoogleBooksFacade.books_by_name(googleBookID)
     end
 
+    field :distances, [Types::DistancesType], null: false do
+      argument :start_zipcode, String
+      argument :target_zipcode, String, required: true
+    end
+    def distances(start_zipcode:, target_zipcode:)
+      ZipcodeFacade.distance_between_books(start_zipcode, target_zipcode)
+    end
   end
 end

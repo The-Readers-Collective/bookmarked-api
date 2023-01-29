@@ -7,7 +7,6 @@ class ZipcodeService
   def self.distance_details(start_zipcode, end_zipcode)
     response = connection.get("/directions/v2/route", {from: start_zipcode, to: end_zipcode})
     parse(response)
-    require 'pry'; binding.pry
   end
   
   def self.connection

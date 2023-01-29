@@ -1,9 +1,9 @@
 class ZipcodeFacade ## do i need < ZipcodeService
 
-  def self.distance_between_books(zipcode_start, zipcode_end)
-    details = ZipcodeService.distance_details(start_zipcode, end_zipcode)[:route].slice(:distance)
-    require 'pry'; binding.pry
-    #might be able to delete details 
+  def self.distance_between_books(start_zipcode, target_zipcode)
+    miles = ZipcodeService.distance_details(start_zipcode, target_zipcode)[:route][:distance]
+    # require 'pry'; binding.pry
+    #might be able to delete 'miles' 
   end
 
 end
